@@ -1,0 +1,69 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../svg/Subway_logo.svg'
+import data from '../data/db.json'
+import { Styleicon } from './style';
+
+function Hd() {
+
+    const gnbmenu = data.gnb.filter((item)=> item.prnum === "")
+
+    const submenu = {};
+
+    for(let item of data.gnb){
+        if(item.prnum !== ""){
+            if(!submenu[item.prnum]){
+                submenu[item.prnum]=[];      
+            }
+            submenu[item.prnum].push(item);
+        }
+    }
+
+    return (
+        <header className=''>
+            <div className='container d-flex justify-content-between align-items-center'>
+                <h1 className='w-0'><img src={logo} alt="서브웨이로고" /></h1>
+                <ul className="gnb ">
+                    {                    
+                        gnbmenu.map((v, i)=>{
+                            return(
+                                <li className='gnbli' key={`gnb${i}`}>
+                                    <Link to={v.href}>{v.gnbnm}</Link>
+                                    {
+                                        submenu[v.cateno] && submenu[v.cateno].length > 0 && (
+                                            <ul className="gnbul">
+                                                {
+                                                    submenu[v.cateno].map((vv, ii) => (
+                                                        <li key={`submenu${ii}`} className='gnbulli'>
+                                                            <Link className='' to={vv.href}>{vv.gnbnm}</Link>
+                                                        </li>
+                                                    ))
+                                                }
+                                            </ul>
+                                        )
+                                    }
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+                <ul className="iconmenu d-flex justify-content-end align-items-center w-0">
+                    <li className="iconli searchli">
+                        <button>
+                            <Styleicon content="\F52A"></Styleicon>
+                            <span className='visually-hidden'>검색버튼</span>
+                        </button>
+                    </li>
+                    <li className="iconli loginli">
+                        <button>
+                            <Styleicon content="\F4E1"></Styleicon>
+                            <span className='visually-hidden'>로그인버튼</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>            
+        </header>
+    )
+}
+
+export default Hd
