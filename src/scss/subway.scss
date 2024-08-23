@@ -63,6 +63,45 @@ header{
     }
                     
 }
+.mainbanner{
+    .mainslide{
+        .mainslidewrap{  
+            display: flex;          
+            align-items: center;
+            &.mainslidewrap1{                
+                ::before{
+                    width: 703px;
+                    height: 611px;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+            &.mainslidewrap2{
+                ::before{
+                    width: 922px;
+                    height: 519px;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+            &.mainslidewrap3{
+                ::before{
+                    width: 1084px;
+                    height: 1033px;
+                }
+            }
+        }
+    }
+    .swiper-pagination-bullet{
+        background: #fff;
+        opacity: 1;
+    } 
+    .swiper-pagination-bullet-active{        
+        background: $yellow;
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{
