@@ -1,10 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../svg/Subway_logo.svg'
+import logohover from '../svg/Subway_logo_hover.svg'
 import data from '../data/db.json'
 import { Styleicon } from './style';
 
 function Hd() {
+    const [ headerchange, setHeaderchange ] = useState(false);
+
+    const hoverheader = () => {
+        setHeaderchange(true);
+    };
+
+    const leaveheader = () => {
+        setHeaderchange(false);
+    };
+
+    // useEffect(()=>{
+    //     const gnb = document.querySelector(".gnb")
+    //     const _header = document.querySelector("header")
+
+    //         gnb.addEventListener("mouseover", function(){
+    //             _header.classList.add("headeron")            
+    //         })
+    //         gnb.addEventListener("mouseleave", function(){
+    //             _header.classList.remove("headeron")
+    //         })
+    // }, [])
 
     const gnbmenu = data.gnb.filter((item)=> item.prnum === "")
 
@@ -20,10 +42,10 @@ function Hd() {
     }
 
     return (
-        <header className=''>
+        <header className={headerchange? "headeron" : ""}>
             <div className='container d-flex justify-content-between align-items-center'>
-                <h1 className='w-0'><img src={logo} alt="서브웨이로고" /></h1>
-                <ul className="gnb ">
+                <h1 className='w-0'><a href="#"><img src={headerchange? logohover : logo} alt="서브웨이로고" /></a></h1>
+                <ul className="gnb" onMouseEnter={hoverheader} onMouseLeave={leaveheader}>
                     {                    
                         gnbmenu.map((v, i)=>{
                             return(
