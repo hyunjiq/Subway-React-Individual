@@ -1,0 +1,400 @@
+{
+    "gnb":[
+        {
+            "gnbnm" : "메뉴소개",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "샌드위치",
+            "href" : "/sandwich",
+            "prnum" : "0",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "랩·기타",
+            "href" : "/wrap",
+            "prnum" : "0",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "샐러드",
+            "href" : "/salad",
+            "prnum" : "0",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "아침메뉴",
+            "href" : "/morning",
+            "prnum" : "0",
+            "cateno" : "3"
+        },
+        {
+            "gnbnm" : "스마일 썹",
+            "href" : "/smileSub",
+            "prnum" : "0",
+            "cateno" : "4"
+        },
+        {
+            "gnbnm" : "단체메뉴",
+            "href" : "/catering",
+            "prnum" : "0",
+            "cateno" : "5"
+        },
+        {
+            "gnbnm" : "이용방법",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "주문방법",
+            "href" : "/orderUse",
+            "prnum" : "1",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "단체메뉴",
+            "href" : "/cateringUse",
+            "prnum" : "1",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "재료소개",
+            "href" : "/freshInfo",
+            "prnum" : "1",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "App 이용방법",
+            "href" : "/AppUse",
+            "prnum" : "1",
+            "cateno" : "3"
+        },
+        {
+            "gnbnm" : "새소식",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "이벤트",
+            "href" : "/event",
+            "prnum" : "2",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "공지사항",
+            "href" : "/notice",
+            "prnum" : "2",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "광고영상",
+            "href" : "/tvCommercial",
+            "prnum" : "2",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "써브웨이",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "3"
+        },
+        {
+            "gnbnm" : "써브웨이 역사",
+            "href" : "/subwayHistory",
+            "prnum" : "3",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "써브웨이 약속",
+            "href" : "/subwayPromise",
+            "prnum" : "3",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "채용 지원",
+            "href" : "/subwaySandwichArtist",
+            "prnum" : "3",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "매장 찾기",
+            "href" : "/storeSearch",
+            "prnum" : "3",
+            "cateno" : "3"
+        },
+        {
+            "gnbnm" : "가맹점",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "4"
+        },
+        {
+            "gnbnm" : "프랜차이즈",
+            "href" : "/franchise",
+            "prnum" : "4",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "가맹신청",
+            "href" : "/franchiseInquiry",
+            "prnum" : "4",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "가맹문의",
+            "href" : "/franchiseQnA",
+            "prnum" : "4",
+            "cateno" : "2"
+        },
+        {
+            "gnbnm" : "지사안내",
+            "href" : "/franchiseBranchGuide",
+            "prnum" : "4",
+            "cateno" : "3"
+        },
+        {
+            "gnbnm" : "사업설명회",
+            "href" : "/franchiseInformation",
+            "prnum" : "4",
+            "cateno" : "4"
+        },
+        {
+            "gnbnm" : "온라인 주문",
+            "href" : "#",
+            "prnum" : "",
+            "cateno" : "5"
+        },
+        {
+            "gnbnm" : "FAST-SUB",
+            "href" : "/fastSub",
+            "prnum" : "5",
+            "cateno" : "0"
+        },
+        {
+            "gnbnm" : "HOME-SUB",
+            "href" : "/homeSub",
+            "prnum" : "5",
+            "cateno" : "1"
+        },
+        {
+            "gnbnm" : "단체주문",
+            "href" : "/cateringOrder",
+            "prnum" : "5",
+            "cateno" : "2"
+        }
+    ],
+    "mainbanner":[
+        {
+            "text" : "거부할 수 없는 고소한 풍미!",
+            "title" : "아보카도 시리즈",
+            "href" : "/avocadoSeries",
+            "url" : "/img/banner/banner1.png",
+            "bgcolor": "#FAFFEB",
+            "fontcolor":"#004820",
+            "linecolor":"#004820"
+            
+        },
+        {
+            "text" : "써브웨이 공식 추천 조합",
+            "title" : "썹 - 픽",
+            "href" : "/subpick",
+            "url" : "/img/banner/banner2.png",
+            "bgcolor": "#FDC504",
+            "fontcolor":"#ffffff",
+            "linecolor":"#FF8A1F"
+        },
+        {
+            "text" : "신선하게! 다채롭게!",
+            "title" : "그린 샐러드 시리즈",
+            "href" : "/greenSaladSeries",
+            "url" : "/img/banner/banner3.png",
+            "bgcolor": "#F1FFCE",
+            "fontcolor":"#008939",
+            "linecolor":"#008939"
+        }
+    ],
+    "sandwich" : [
+        {
+            "sandwichnm" : "에그마요",
+            "kcal" : "416kcal",
+            "text" : "부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운 스테디셀러",
+            "src" : "/img/sandwich/Egg-Mayo.png",
+            "alt" : "에그마요샌드위치사진",
+            "href" : "/eggMayosandwich"
+            
+            
+        },
+        {
+            "sandwichnm" : "비엘티",
+            "kcal" : "300kcal",
+            "text" : "오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로",
+            "src" : "/img/sandwich/BLT.png",
+            "alt" : "비엘티샌드위치사진",
+            "href" : "/BLTsandwich"
+        },
+        {
+            "sandwichnm" : "햄",
+            "kcal" : "262kcal",
+            "text" : "풍부한 햄이 만들어내는 담백함을 입 안 가득 즐겨보세요!",
+            "src" : "/img/sandwich/Ham.png",
+            "alt" : "햄샌드위치사진",
+            "href" : "/hamsandwich"
+        },
+        {
+            "sandwichnm" : "이탈리안 비엠티",
+            "kcal" : "388kcal",
+            "text" : "페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 써브웨이의 베스트셀러!",
+            "src" : "/img/sandwich/Italian_B.M.T.png",
+            "alt" : "이탈리안 비엠티샌드위치사진",
+            "href" : "/ItalianBMTsandwich"
+        },
+        {
+            "sandwichnm" : "로스트 치킨",
+            "kcal" : "300kcal",
+            "text" : "오븐에 구워 담백한 저칼로리 닭가슴살의 건강한 풍미",
+            "src" : "/img/sandwich/Roasted-Chicken.png",
+            "alt" : "로스트 치킨샌드위치사진",
+            "href" : "/roastedChickensandwich"
+        },
+        {
+            "sandwichnm" : "쉬림프",
+            "kcal" : "241kcal",
+            "text" : "탱글한 쉬림프 5마리가 그대로, 신선하고 담백한 쉬림프의 맛 그대로 즐겨보세요!",
+            "src" : "/img/sandwich/Shrimp.png",
+            "alt" : "쉬림프샌드위치사진",
+            "href" : "/Shrimpsandwich"
+        },
+        {
+            "sandwichnm" : "스테이크 & 치즈",
+            "kcal" : "355kcal",
+            "text" : "육즙이 풍부한 비프 스테이크의 풍미가 입안 한가득",
+            "src" : "/img/sandwich/Steak-Cheese.png",
+            "alt" : "스테이크 & 치즈샌드위치사진",
+            "href" : "/steakCheesesandwich"
+        },
+        {
+            "sandwichnm" : "참치",
+            "kcal" : "kcal",
+            "text" : "남녀노소 누구나 좋아하는 담백한 참치와 고소한 마요네즈의 완벽한 조화",
+            "src" : "/img/sandwich/Tuna.png",
+            "alt" : "참치샌드위치사진",
+            "href" : "/tunasandwich"
+        }
+        
+    ],
+    "salad" : [
+        {
+            "saladhnm" : "비엘티",
+            "text" : "B.L.T.",
+            "src" : "/img/salad/BLT.png",
+            "alt" : "비엘티 샐러드 사진",
+            "href" : "/BLTsalad"
+        },
+        {
+            "saladhnm" : "치킨 베이컨 아보카도",
+            "text" : "Chicken Bacon Avocado",
+            "src" : "/img/salad/chickenBA.png",
+            "alt" : "치킨 베이컨 아보카도 샐러드 사진",
+            "href" : "/chickenBAsalad"
+        },
+        {
+            "saladhnm" : "에그마요",
+            "text" : "Egg Mayo",
+            "src" : "/img/salad/eggmayo.png",
+            "alt" : "에그마요 샐러드 사진",
+            "href" : "/eggmayosalad"
+        },
+        {
+            "saladhnm" : "로스트 치킨",
+            "text" : "Roasted Chicken",
+            "src" : "/img/salad/roast-chicken.png",
+            "alt" : "로스트 치킨 샐러드사진",
+            "href" : "/roastchickensalad"
+        },
+        {
+            "saladhnm" : "스파이시 쉬림프",
+            "text" : "Spicy Shrimp",
+            "src" : "/img/salad/Spicy_Shrimp.png",
+            "alt" : "스파이시 쉬림프 샐러드사진",
+            "href" : "/spicyShrimpsalad"
+        },
+        {
+            "saladhnm" : "참치",
+            "text" : "Tuna",
+            "src" : "/img/salad/tuna.png",
+            "alt" : "참치 샐러드사진",
+            "href" : "/Tunasalad"
+        }
+    ],
+    "smileSub":[
+        {
+            "smileSubhnm" : "서브웨이쿠키",
+            "text" : "부드럽고 달콤한 서브웨이 쿠키 5종을 만나보세요!",
+            "src" : "/img/smileSub/cookies.png",
+            "href" : "/cookies"
+        },
+        {
+            "smileSubhnm" : "서브웨이스프",
+            "text" : "달콤한 옥수수의 깊은 풍미와 부드러운 머쉬룸의 풍미가 가득",
+            "src" : "/img/smileSub/soup.png",
+            "href" : "/soup"
+        },
+        {
+            "smileSubhnm" : "웨지 포테이토",
+            "text" : "오븐에 구워 더 담백, 겉은 바삭 속은 촉촉한 건강한 사이드",
+            "src" : "/img/smileSub/wedgepotatoes.png",
+            "href" : "/wedgepotatoes"
+        },
+        {
+            "smileSubhnm" : "미니랩",
+            "text" : "담백한 치킨, 바삭한 베이컨 비츠가 쫀득한 통밀 랩에 쏘옥",
+            "src" : "/img/smileSub/miniwrap.png",
+            "href" : "/miniwrap"
+        },
+        {
+            "smileSubhnm" : "고구마칩",
+            "text" : "벌집모양 고구마를 오븐에 구워 건강한 맛",
+            "src" : "/img/smileSub/sweetpotato.png",
+            "href" : "/sweetpotato"
+        },
+        {
+            "smileSubhnm" : "해쉬브라운",
+            "text" : "잘게 썬 감자를 노릇하게 구워 바삭하고 쫀득하게 즐기는 모닝 파트너",
+            "src" : "/img/smileSub/hashbrowns.png",
+            "href" : "/hashbrowns"
+        }        
+    ],
+    "withSub":[
+        "/img/smileSub/cry.jpg",
+        "/img/smileSub/pyramid.jpg",
+        "/img/smileSub/apartment.jpg",
+        "/img/smileSub/graduation.jpg"
+    ],
+    "subnews":[
+        {
+            "title" : "써브웨이 가격 조정 안내",
+            "day" : "2024-06-24",
+            "href" : "/notice1"
+        },
+        {
+            "title" : "개인정보 처리방침 개정안내",
+            "day" : "2024-06-20",
+            "href" : "/notice2"
+        },
+        {
+            "title" : "써브웨이 모바일 상품권 이용 안내",
+            "day" : "2024-03-08",
+            "href" : "/notice3"
+        },
+        {
+            "title" : "써브웨이 앱 출시 및 앱 사용 불가 매장 안내",
+            "day" : "2024-01-17",
+            "href" : "/notice4"
+        }      
+
+    ]
+}

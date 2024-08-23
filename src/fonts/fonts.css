@@ -1,0 +1,68 @@
+/* Noto Sans KR */
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Noto Sans KR';
+    src: url('./NotoSansKR-Black.ttf') format('truetype');
+    font-weight: 900;
+  }
+  
+/* SBAggro */
+  @font-face {
+    font-family: 'SBAggroB';
+    src: url('./SBAggroB.ttf') format('truetype');    
+  }
+  @font-face {
+    font-family: 'SBAggroL';
+    src: url('./SBAggroL.ttf') format('truetype');    
+  }
+  @font-face {
+    font-family: 'SBAggroM';
+    src: url('./SBAggroL.ttf') format('truetype');    
+  }
+
+/* JalnanGothic */
+  @font-face {
+    font-family: 'JalnanGothic';
+    src: url('./JalnanGothicTTF.ttf') format('truetype');    
+  }
+
+/* JalnanGothic */
+  @font-face {
+    font-family: 'ArchivoBlack';
+    src: url('./ArchivoBlack-Regular.ttf') format('truetype');    
+  }
+
+  body {
+    font-family:"Noto Sans KR", sans-serif !important;
+    font-weight: 400;
+  }
+
