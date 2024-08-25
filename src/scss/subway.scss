@@ -68,28 +68,40 @@ header{
         .mainslidewrap{  
             display: flex;          
             align-items: center;
-            &.mainslidewrap1{                
+            &.mainslidewrap1{                    
                 ::before{
-                    width: 703px;
-                    height: 611px;
-                    right: 0;
+                    width: 100%;
+                    height: calc(100% - 20vh);
+                    background-position: top right 7vw;
                     top: 0;
                     bottom: 0;
+                    left: 0;
                     margin: auto;
                 }
             }
             &.mainslidewrap2{
                 ::before{
-                    width: 922px;
-                    height: 519px;
+                    // width: 922px;
+                    // height: 556px;
                     right: 0;
                     bottom: 0;
+                }
+                ::after{
+                    content: "";
+                    background: url(../svg/sandwichartist.svg) no-repeat;
+                    position: absolute;
+                    // width: 912px;
+                    // height: 1300px;
+                    right: 0;
+                    bottom: 3rem;
                 }
             }
             &.mainslidewrap3{
                 ::before{
-                    width: 1084px;
-                    height: 1033px;
+                    // width: 1084px;
+                    // height: 1033px;
+                    right: -5rem;
+                    bottom: 0;
                 }
             }
         }

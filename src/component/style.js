@@ -44,14 +44,15 @@ export const Mainslidewrap = styled.div`
         position: absolute;
         bottom: 0;
         background-color: ${(props) => (props.linecolor ? props.linecolor : "")};
+        z-index: 1;
     }
 `   
 export const Mainslidetxtwrap = styled.div`
-    position: relative;
     &::before{
         content: "";
         ${(props) => props.url && `background: url(${props.url}) no-repeat;`}
         background-size: contain;
         position: absolute;
+        z-index: 2;
     }
 `
