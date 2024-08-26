@@ -221,7 +221,7 @@
         {
             "sandwichnm" : "에그마요",
             "kcal" : "416kcal",
-            "text" : "부드러운 달걀과 고소한 마요네즈가 만나 더 부드러운 스테디셀러",
+            "text" : "부드러운 달걀과 고소한 마요네즈가 만나|더 부드러운 스테디셀러",
             "src" : "/img/sandwich/Egg-Mayo.png",
             "alt" : "에그마요샌드위치사진",
             "href" : "/eggMayosandwich"
@@ -231,7 +231,7 @@
         {
             "sandwichnm" : "비엘티",
             "kcal" : "300kcal",
-            "text" : "오리지널 아메리칸 스타일 베이컨의 풍미와 바삭함 그대로",
+            "text" : "오리지널 아메리칸 스타일 베이컨의|풍미와 바삭함 그대로",
             "src" : "/img/sandwich/BLT.png",
             "alt" : "비엘티샌드위치사진",
             "href" : "/BLTsandwich"
@@ -239,7 +239,7 @@
         {
             "sandwichnm" : "햄",
             "kcal" : "262kcal",
-            "text" : "풍부한 햄이 만들어내는 담백함을 입 안 가득 즐겨보세요!",
+            "text" : "풍부한 햄이 만들어내는 담백함을|입 안 가득 즐겨보세요!",
             "src" : "/img/sandwich/Ham.png",
             "alt" : "햄샌드위치사진",
             "href" : "/hamsandwich"
@@ -247,7 +247,7 @@
         {
             "sandwichnm" : "이탈리안 비엠티",
             "kcal" : "388kcal",
-            "text" : "페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 써브웨이의 베스트셀러!",
+            "text" : "페퍼로니, 살라미|그리고 햄이 만들어내는 최상의 조화!|전세계가 사랑하는 써브웨이의 베스트셀러!",
             "src" : "/img/sandwich/Italian_B.M.T.png",
             "alt" : "이탈리안 비엠티샌드위치사진",
             "href" : "/ItalianBMTsandwich"
@@ -255,7 +255,7 @@
         {
             "sandwichnm" : "로스트 치킨",
             "kcal" : "300kcal",
-            "text" : "오븐에 구워 담백한 저칼로리 닭가슴살의 건강한 풍미",
+            "text" : "오븐에 구워 담백한|저칼로리 닭가슴살의 건강한 풍미",
             "src" : "/img/sandwich/Roasted-Chicken.png",
             "alt" : "로스트 치킨샌드위치사진",
             "href" : "/roastedChickensandwich"
@@ -263,7 +263,7 @@
         {
             "sandwichnm" : "쉬림프",
             "kcal" : "241kcal",
-            "text" : "탱글한 쉬림프 5마리가 그대로, 신선하고 담백한 쉬림프의 맛 그대로 즐겨보세요!",
+            "text" : "탱글한 쉬림프 5마리가 그대로,|신선하고 담백한 쉬림프의 맛 그대로 즐겨보세요!",
             "src" : "/img/sandwich/Shrimp.png",
             "alt" : "쉬림프샌드위치사진",
             "href" : "/Shrimpsandwich"
@@ -271,7 +271,7 @@
         {
             "sandwichnm" : "스테이크 & 치즈",
             "kcal" : "355kcal",
-            "text" : "육즙이 풍부한 비프 스테이크의 풍미가 입안 한가득",
+            "text" : "육즙이 풍부한 비프 스테이크의|풍미가 입안 한가득",
             "src" : "/img/sandwich/Steak-Cheese.png",
             "alt" : "스테이크 & 치즈샌드위치사진",
             "href" : "/steakCheesesandwich"
@@ -279,7 +279,7 @@
         {
             "sandwichnm" : "참치",
             "kcal" : "kcal",
-            "text" : "남녀노소 누구나 좋아하는 담백한 참치와 고소한 마요네즈의 완벽한 조화",
+            "text" : "남녀노소 누구나 좋아하는 담백한 참치와|고소한 마요네즈의 완벽한 조화",
             "src" : "/img/sandwich/Tuna.png",
             "alt" : "참치샌드위치사진",
             "href" : "/tunasandwich"
@@ -333,37 +333,37 @@
     "smileSub":[
         {
             "smileSubhnm" : "서브웨이쿠키",
-            "text" : "부드럽고 달콤한 서브웨이 쿠키 5종을 만나보세요!",
+            "text" : "부드럽고 달콤한|서브웨이 쿠키 5종을 만나보세요!",
             "src" : "/img/smileSub/cookies.png",
             "href" : "/cookies"
         },
         {
             "smileSubhnm" : "서브웨이스프",
-            "text" : "달콤한 옥수수의 깊은 풍미와 부드러운 머쉬룸의 풍미가 가득",
+            "text" : "달콤한 옥수수의 깊은 풍미와|부드러운 머쉬룸의 풍미가 가득",
             "src" : "/img/smileSub/soup.png",
             "href" : "/soup"
         },
         {
             "smileSubhnm" : "웨지 포테이토",
-            "text" : "오븐에 구워 더 담백, 겉은 바삭 속은 촉촉한 건강한 사이드",
+            "text" : "오븐에 구워 더 담백,|겉은 바삭 속은 촉촉한 건강한 사이드",
             "src" : "/img/smileSub/wedgepotatoes.png",
             "href" : "/wedgepotatoes"
         },
         {
             "smileSubhnm" : "미니랩",
-            "text" : "담백한 치킨, 바삭한 베이컨 비츠가 쫀득한 통밀 랩에 쏘옥",
+            "text" : "담백한 치킨,|바삭한 베이컨 비츠가|쫀득한 통밀 랩에 쏘옥",
             "src" : "/img/smileSub/miniwrap.png",
             "href" : "/miniwrap"
         },
         {
             "smileSubhnm" : "고구마칩",
-            "text" : "벌집모양 고구마를 오븐에 구워 건강한 맛",
+            "text" : "벌집모양 고구마를|오븐에 구워 건강한 맛",
             "src" : "/img/smileSub/sweetpotato.png",
             "href" : "/sweetpotato"
         },
         {
             "smileSubhnm" : "해쉬브라운",
-            "text" : "잘게 썬 감자를 노릇하게 구워 바삭하고 쫀득하게 즐기는 모닝 파트너",
+            "text" : "잘게 썬 감자를 노릇하게 구워|바삭하고 쫀득하게 즐기는|모닝 파트너",
             "src" : "/img/smileSub/hashbrowns.png",
             "href" : "/hashbrowns"
         }        

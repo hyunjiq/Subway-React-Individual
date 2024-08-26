@@ -127,6 +127,108 @@ header{
         background: $yellow;
     }
 }
+.sandwich{
+    margin-top: 7vw;
+    overflow: hidden;
+    .contentstitle{
+
+    }
+    .container-left{
+        overflow: hidden;
+        margin-left: calc(50% - 700px);
+        margin-top: 4vw;
+        box-sizing: border-box;        
+        .sandwichswiper{
+            display: block;
+            .swiper-wrapper{
+                align-items: center;
+                .swiper-slide{
+                    width: 25%;
+                    transition: width 0.3s ease-in-out;
+                    .sandtextwrap{
+                        display: none;
+                    }
+                    &.swiper-slide-active{
+                        background-color: #ffcc36;
+                        border-radius: 50px;
+                        width: 33%;
+                        padding: 2rem 0;
+                        img{
+                            width: 500px;
+                            display: block;
+                            margin: auto;
+                        }
+                        .sandtextwrap{
+                            margin-top: -2rem;
+                            display: flex;
+                        }
+                    }
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                        width: 300px;
+                    }
+                } 
+                // .swiper-slide {
+                //     position: relative;
+                //     width: 410px;
+                //     height: 232px;
+                //     display: flex;
+                //     flex-direction: column;
+                //     justify-content: center;
+                //     margin-top: 96px;
+                //     transition: width 0.2s ease-in-out;
+                //     background: #000;
+                //   }
+                //   .swiper-slide.swiper-slide-active {
+                //     width: 753px;
+                //     height: 424px;
+                //     padding-bottom: 125px;
+                //     margin-top: 0;
+                //     animation-name: slideOn;
+                //     animation-duration: 0.4s;
+                //     animation-timing-function: ease-in-out;
+                //     background: $yellow;
+                //   } 
+            }   
+            .naviscroll{
+                padding-top: 5rem;
+                max-width: 1400px;
+            }
+            .swiper-scrollbar{
+                width: 80%;
+                background: #D9D9D9;
+                .swiper-scrollbar-drag{
+                    background: $green;
+                    width: 20% !important;
+                }
+            }
+            .sandwrapnavi{
+                width: 100px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                div{
+                    color: #666;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid #666;
+                    &.swiper-button-prev{
+                        left: 0;
+                    }
+                    &.swiper-button-next{
+                        right: 0;
+                    }
+                }                
+                ::after{
+                    font-size: 1rem;
+                }
+            }         
+        }
+    }
+    
+}
 @media (min-width:768px) {
     header{
         &.headeron{
