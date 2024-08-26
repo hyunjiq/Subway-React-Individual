@@ -18,14 +18,18 @@ export const Styleicon = styled.i`
 `
 //fonts
 export const Mainbannertxt = styled.span`
+    position: relative;
+    z-index: 10;
     font-family: 'SBAggroL';
-    font-size: 3.375rem;
+    font-size: 3vw;
     color: ${(props) => (props.color ? props.color : "")};
 `
 
 export const Mainbannertitle = styled.span`
+    position: relative;
+    z-index: 10;
     font-family: 'JalnanGothic';
-    font-size: 6rem;
+    font-size: 5.5vw;
     color: ${(props) => (props.color ? props.color : "")};
 `
 //div
@@ -45,6 +49,7 @@ export const Mainslidewrap = styled.div`
         bottom: 0;
         background-color: ${(props) => (props.linecolor ? props.linecolor : "")};
         z-index: 1;
+        transition: .3s;
     }
 `   
 export const Mainslidetxtwrap = styled.div`
@@ -54,5 +59,6 @@ export const Mainslidetxtwrap = styled.div`
         background-size: contain;
         position: absolute;
         z-index: 2;
+        transition:.3s;
     }
 `

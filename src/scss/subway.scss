@@ -1,7 +1,7 @@
 $yellow:#FDC504;
 $green:#009132;
 header{
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     left: 0;
@@ -68,40 +68,53 @@ header{
         .mainslidewrap{  
             display: flex;          
             align-items: center;
-            &.mainslidewrap1{                    
-                ::before{
-                    width: 100%;
-                    height: calc(100% - 20vh);
-                    background-position: top right 7vw;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
+            &.mainslidewrap1{     
+                .mainslidetxtwrap{               
+                    &::before{
+                        width: 100%;
+                        height: calc(100% - 20vh);
+                        background-position: top right 7vw;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                    }
                 }
             }
-            &.mainslidewrap2{
-                ::before{
-                    // width: 922px;
-                    // height: 556px;
-                    right: 0;
-                    bottom: 0;
+            &.mainslidewrap2{                
+                .mainslidetxtwrap{
+                    &::before{
+                        width: 100%;
+                        height: calc(100% - 25vh);
+                        background-position: top right;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &::after{
+                        content: "";
+                        width: 100%;
+                        height: calc(100% + 25vw);
+                        background: url(../svg/sandwichartist.svg) no-repeat;
+                        background-position: top right 1vw;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: .3s;
+                    }
                 }
-                ::after{
-                    content: "";
-                    background: url(../svg/sandwichartist.svg) no-repeat;
-                    position: absolute;
-                    // width: 912px;
-                    // height: 1300px;
-                    right: 0;
-                    bottom: 3rem;
-                }
+                
             }
             &.mainslidewrap3{
-                ::before{
-                    // width: 1084px;
-                    // height: 1033px;
-                    right: -5rem;
-                    bottom: 0;
+                .mainslidetxtwrap{
+                    &::before{
+                        width: 100%;
+                        height: calc(100% + 30vw);
+                        background-position: top right -5vw;
+                        bottom: 0;
+                        top: 0;
+                        margin: auto;
+                        left: 0;
+                    }
                 }
             }
         }
@@ -155,7 +168,9 @@ header{
         }               
     }
 }
-@media (max-width:1199px){
+@media (max-width:1440px){    
+}
+@media (max-width:1200px){
     header{ 
         h1{
             img{
@@ -177,6 +192,38 @@ header{
                 }               
             }                   
         }                
+    }
+    .mainbanner{
+        .mainslide{
+            .mainslidewrap{  
+                &::before{
+                    height: 8rem;
+                }
+                &.mainslidewrap1{     
+                    .mainslidetxtwrap{                          
+                        &::before{
+                            height: calc(100% - 30vh);
+                            bottom: -7rem;
+                        }
+                    }
+                }
+                &.mainslidewrap2{                
+                    .mainslidetxtwrap{
+                        &::before{
+                            height: calc(100% - 35vh);
+                        }
+                    }
+                    
+                }
+                &.mainslidewrap3{
+                    .mainslidetxtwrap{
+                        &::before{
+                            height: calc(100% + 10vw);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:990px){
@@ -325,6 +372,56 @@ header{
             display: none;
         }                
     }
+    .mainbanner{
+        .mainslide{
+            .mainslidewrap{  
+                align-items: flex-start;
+                .mainslidetxtwrap{
+                    margin-top: 5rem;
+                    .mainbannertxt{
+                        font-size: 6vw;    
+                        text-align: center;
+                    }
+                    .mainbannertitle{
+                        font-size: 10vw;
+                        text-align: center;
+                                
+                    }
+                }                
+                &.mainslidewrap1{     
+                    .mainslidetxtwrap{                          
+                        &::before{
+                            height: calc(100% - 40vw);
+                            bottom: -30vw;
+                            background-position: center;
+                        }
+                    }
+                }
+                &.mainslidewrap2{                
+                    .mainslidetxtwrap{
+                        &::before{
+                            height: calc(100% - 65vw);
+                            width: 100%;
+                            background-position: center;
+                        }
+                        &::after{
+                            height: calc(100% - 25vw);
+                            background-position: center;
+                        }
+                    }
+                    
+                }
+                &.mainslidewrap3{
+                    .mainslidetxtwrap{
+                        &::before{
+                            background-position: center;
+                            bottom: -60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -335,10 +432,50 @@ header{
                 }                                  
             }
         }               
-    }    
+    }  
+    .mainbanner{
+        .mainslide{
+            .mainslidewrap{  
+                height: 120vw;
+                border-radius: 30px 0 30px 30px;                
+                &::before{
+                    height: 20vw;
+                }
+                .mainslidetxtwrap{
+                    .mainbannertxt{
+                    }
+                    .mainbannertitle{
+                                
+                    }
+                }                
+                &.mainslidewrap1{     
+                    .mainslidetxtwrap{                          
+                        &::before{
+                        }
+                    }
+                }
+                &.mainslidewrap2{                
+                    .mainslidetxtwrap{
+                        &::before{
+                        }
+                        &::after{
+                        }
+                    }
+                    
+                }
+                &.mainslidewrap3{
+                    .mainslidetxtwrap{
+                        &::before{
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
 
-
+// @media (max-width:1440px)
+// @media (max-width:1200px)
 // @media (max-width:1024px)
 // @media (max-width:990px)
 // @media (max-width:767px)

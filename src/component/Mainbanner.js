@@ -28,8 +28,8 @@ function Mainbanner() {
                         <Link to={v.href}>
                             <Mainslidewrap bgcolor={v.bgcolor}  linecolor={v.linecolor} className={`mainslidewrap mainslidewrap${i+1}`}>
                                 <Mainslidetxtwrap  url={v.url} className='mainslidetxtwrap d-flex flex-column container-lg'>
-                                    <Mainbannertxt color={v.fontcolor}>{v.text}</Mainbannertxt>
-                                    <Mainbannertitle color={v.fontcolor}>{v.title}</Mainbannertitle>
+                                    <Mainbannertxt color={v.fontcolor} className='mainbannertxt'>{v.text}</Mainbannertxt>
+                                    <Mainbannertitle color={v.fontcolor} className='mainbannertitle'>{v.title}</Mainbannertitle>
                                 </Mainslidetxtwrap>                                
                             </Mainslidewrap>                            
                         </Link>
