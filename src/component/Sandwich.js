@@ -24,7 +24,6 @@ function Sandwich() {
                         prevEl: ".sandwrapnavi .swiper-button-prev",
                     }}
                     slidesPerView={'auto'}
-                    spaceBetween={30}
                     initialSlide={0}
                     scrollbar={{
                         el: '.swiper-scrollbar',
@@ -36,20 +35,22 @@ function Sandwich() {
                 >
                     {
                         data.sandwich.map((v, i)=>(
-                            <SwiperSlide key={`sandwichslide${i}`} className="d-flex flex-column justify-content-center">
-                                <img src={v.src} alt={v.alt} />
-                                <div className="sandtextwrap flex-column align-items-center">
-                                    <Foodnm>{v.sandwichnm}</Foodnm>
-                                    <span>{v.kcal}</span>
-                                    {
-                                        v.text.split('|').map((vv, ii)=>(
-                                            <Foodtext key={`text${ii}`}>
-                                                {vv}
-                                            </Foodtext>
-                                        ))
-                                    }
-                                    
+                            <SwiperSlide key={`sandwichslide${i}`} >
+                                <div className="d-flex flex-column justify-content-center align-items-center">
+                                    <img src={v.src} alt={v.alt} />
+                                    <div className="sandtextwrap flex-column align-items-center">
+                                        <Foodnm>{v.sandwichnm}</Foodnm>
+                                        <span>{v.kcal}</span>
+                                        <Foodtext className='d-flex flex-column align-items-center'>
+                                        {
+                                            v.text.split('|').map((vv, ii)=>(                                                
+                                                    <span key={`text${ii}`}>{vv}</span>                                                
+                                            ))
+                                        }
+                                        </Foodtext>
+                                    </div>
                                 </div>
+                                
                             </SwiperSlide>
                         ))
                     }

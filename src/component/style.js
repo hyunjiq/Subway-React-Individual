@@ -44,18 +44,36 @@ export const Contentstitle = styled.h2`
     span:last-child{
         color: #009132;
     }
+    @media (max-width: 768px) {
+        font-size: 6vw;
+    }
+    @media (max-width: 575px) {
+        font-size: 7vw;
+    }
 `
 export const Foodnm = styled.span`
     font-family: 'Noto Sans KR';
     font-weight: 600;
     font-size: 1.4375rem;
     color: #333;
+    @media (max-width: 990px) {
+        font-size: 1.35rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `
 export const Foodtext = styled.span`
     font-family: 'Noto Sans KR';
     font-weight: 300;
     font-size: 1.125rem;
     color: #666;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 768px) {
+        font-size: 0.875rem;
+    }
 `
 //div
 export const Mainslidewrap = styled.div`
