@@ -213,6 +213,50 @@ header{
     }
     
 }
+.salad{
+    margin-top: 7vw;   
+    .saladtxtwrap{
+        background: url(../../public/img/salad/saladbg.jpg) no-repeat;
+        width: 100%;
+        background-size: 100%;
+        height: 0;
+        padding: 15%;
+        .contentstitle{
+            padding-bottom: 2rem;
+        }   
+        .foodtext{
+            display: flex;
+        }     
+    }
+    .saladswiper{
+        transform: translateY(-8.5vw);
+        .swiper-wrapper{
+            .swiper-slide{
+                img{
+                    width: 80%;
+                }
+            }
+        }
+        .saladnavi{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            .swiper-button-prev,
+            .swiper-button-next{
+                color: #333;
+                display: block;
+                width: auto;
+            }
+            .swiper-button-prev{
+                left: 0;
+            }
+            .swiper-button-next{
+                right: 0;
+            }
+        }        
+    }    
+}
 @media (min-width:768px) {
     header{
         &.headeron{
@@ -266,7 +310,7 @@ header{
                 }
             }
         }        
-    }  
+    } 
 }
 @media (max-width:1200px){
     header{ 
@@ -323,6 +367,12 @@ header{
             }
         }
     }
+    .salad{  
+        .saladtxtwrap{
+            background-size: 130%;
+            padding: 20%;               
+        }
+    }
 }
 @media (max-width:990px){
     header{ 
@@ -363,9 +413,17 @@ header{
                 }
             }      
         }
-    }        
+    }  
+    .salad{          
+        .saladswiper{            
+            .saladnavi{
+                ::after{
+                    font-size: 2rem;
+                }
+            }            
+        }    
+    }      
 }
-
 @media (max-width:767px){
     header{ 
         .headerdiv{
@@ -576,6 +634,27 @@ header{
             }
         }        
     }
+    .salad{ 
+        .saladtxtwrap{
+            background-size: 200%;
+            padding: 30%;   
+            .foodtext{
+                display: none;
+            }  
+        }
+        .saladswiper{
+            transform: translateY(-13vw);
+            
+            .swiper-wrapper{
+                .swiper-slide{
+                    img{
+                        width: 65%;
+                    }
+                }
+            }
+            
+        }    
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -641,6 +720,23 @@ header{
                 }   
             }
         }        
+    }
+    .salad{ 
+        .saladtxtwrap{
+            background-size: 300%;
+            padding: 40%; 
+        }
+        .saladswiper{
+            transform: translateY(-25vw);            
+            .swiper-wrapper{
+                .swiper-slide{
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+            
+        }    
     }
 }
 

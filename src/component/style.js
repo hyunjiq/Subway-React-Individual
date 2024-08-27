@@ -41,8 +41,8 @@ export const Contentstitle = styled.h2`
     span:first-child{
         color:#FDC504;
     }
-    span:last-child{
-        color: #009132;
+    span:last-child{        
+        color: ${(props) => (props.color ? props.color : "#009132")};
     }
     @media (max-width: 768px) {
         font-size: 6vw;
@@ -67,7 +67,7 @@ export const Foodtext = styled.span`
     font-family: 'Noto Sans KR';
     font-weight: 300;
     font-size: 1.125rem;
-    color: #666;
+    color: ${(props) => (props.color ? props.color : "#666666")};
     @media (max-width: 990px) {
         font-size: 1rem;
     }
