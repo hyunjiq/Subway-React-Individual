@@ -153,7 +153,7 @@ header{
                         margin-left: 10%;
                     }
                     &.swiper-slide-active{
-                        >div{
+                        .activewrap{
                         background-color: #ffcc36;
                         border-radius: 50px;                        
                         width: 120%;
@@ -348,7 +348,7 @@ header{
                 .swiper-wrapper{
                     .swiper-slide{
                         &.swiper-slide-active{
-                            >div{
+                            .activewrap{
                                 width: 130%;
                                 padding: 3rem 0;
                             }
@@ -558,7 +558,7 @@ header{
                             margin-left: 20%;
                         }
                         &.swiper-slide-active{
-                            >div{
+                            .activewrap{
                                 padding: 3vw 0;
                             }
                             img{
@@ -633,7 +633,7 @@ header{
                     .swiper-slide{
                         width: 60%;
                         &.swiper-slide-active{
-                            >div{
+                            .activewrap{
                                 border-radius: 30px;
                             }
                         }

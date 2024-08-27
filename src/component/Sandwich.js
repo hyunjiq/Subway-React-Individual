@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Scrollbar, Navigation } from 'swiper/modules'; 
+import { Scrollbar, Navigation } from 'swiper/modules'; 
 import { Link } from 'react-router-dom';
 import data from '../data/db.json'
 import { Contentstitle, Foodnm, Foodtext } from './style';
@@ -17,7 +17,7 @@ function Sandwich() {
             <div className="container-left">
                 <Swiper
                     loop={true}
-                    modules={[Navigation, Autoplay, Scrollbar]} 
+                    modules={[Navigation, Scrollbar]} 
                     className="sandwichswiper"
                     navigation={{
                         nextEl: ".sandwrapnavi .swiper-button-next",
@@ -28,15 +28,11 @@ function Sandwich() {
                     scrollbar={{
                         el: '.swiper-scrollbar',
                     }}
-                    // autoplay={{
-                    //     delay: 4000,
-                    //     disableOnInteraction: false,
-                    // }}
                 >
                     {
                         data.sandwich.map((v, i)=>(
                             <SwiperSlide key={`sandwichslide${i}`} >
-                                <div className="d-flex flex-column justify-content-center align-items-center">
+                                <Link to={v.href} className="activewrap d-flex flex-column justify-content-center align-items-center">
                                     <img src={v.src} alt={v.alt} />
                                     <div className="sandtextwrap flex-column align-items-center">
                                         <Foodnm>{v.sandwichnm}</Foodnm>
@@ -49,8 +45,7 @@ function Sandwich() {
                                         }
                                         </Foodtext>
                                     </div>
-                                </div>
-                                
+                                </Link>                                
                             </SwiperSlide>
                         ))
                     }
