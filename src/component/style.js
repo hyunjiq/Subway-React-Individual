@@ -55,7 +55,7 @@ export const Foodnm = styled.span`
     font-family: 'Noto Sans KR';
     font-weight: 600;
     font-size: 1.4375rem;
-    color: #333;
+    color: ${(props) => (props.color ? props.color : "#333333")};
     @media (max-width: 990px) {
         font-size: 1.35rem;
     }
@@ -67,6 +67,7 @@ export const Foodtext = styled.span`
     font-family: 'Noto Sans KR';
     font-weight: 300;
     font-size: 1.125rem;
+    line-height: 1.3;
     color: ${(props) => (props.color ? props.color : "#666666")};
     @media (max-width: 990px) {
         font-size: 1rem;

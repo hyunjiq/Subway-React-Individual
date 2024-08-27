@@ -257,6 +257,61 @@ header{
         }        
     }    
 }
+.smilesub{
+    .smilesubwrap{  
+        margin-top: 4vw;      
+        .smilesubmenu{
+            a{
+                background: #FFD24B;
+                display: block;                
+                margin: .5rem;                
+                padding: 8rem 0;
+                position: relative;
+                max-height: 380px;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    width: 100%;
+                }
+                .subtextwrap{
+                    position: relative;
+                    transition: 0.3s;
+                    z-index: 1;
+                    opacity: 0;
+                    .foodnm{
+                        padding-bottom: 0.5rem;
+                    }
+                    i{
+                        padding-top: 3rem;
+                        color: #fff;
+                        font-size: 1.5rem;
+                    }
+                }
+                &::after{
+                    content:"";
+                    position: absolute;
+                    background: #000000a0;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+                &:hover{
+                    .subtextwrap{
+                        opacity: 1;
+                    }
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{
