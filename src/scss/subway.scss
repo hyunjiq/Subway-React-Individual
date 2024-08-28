@@ -130,9 +130,6 @@ header{
 .sandwich{
     margin-top: 7vw;
     overflow: hidden;
-    .contentstitle{
-
-    }
     .container-left{
         overflow: hidden;
         margin-left: calc(50% - 700px);
@@ -265,14 +262,15 @@ header{
                 background: #FFD24B;
                 display: block;                
                 margin: .5rem;                
-                padding: 8rem 0;
+                
                 position: relative;
                 max-height: 380px;
                 overflow: hidden;
+                transition: .3s;
                 img{
                     position: absolute;
                     display: block;
-                    top: 0;
+                    bottom: -5rem;
                     width: 100%;
                 }
                 .subtextwrap{
@@ -280,6 +278,7 @@ header{
                     transition: 0.3s;
                     z-index: 1;
                     opacity: 0;
+                    padding: 8rem 0;
                     .foodnm{
                         padding-bottom: 0.5rem;
                     }
@@ -308,6 +307,22 @@ header{
                         opacity: 1;
                     }
                 }
+            }
+            &:nth-child(3) img{
+                left: 2rem;
+                bottom: -6rem;
+            }
+            &:nth-child(4) img{
+                left: -2rem;
+                bottom: -4rem;
+            }
+            &:nth-child(5) img{
+                left: 3rem;
+                bottom: -6rem;
+            }
+            &:nth-child(6) img{
+                left: 3rem;
+                bottom: -7rem;
             }
         }
     }
@@ -366,6 +381,15 @@ header{
             }
         }        
     } 
+    .smilesub{
+        .smilesubwrap{      
+            .smilesubmenu{
+                a{
+                    max-height: 30vw;
+                }                    
+            }
+        }
+    }
 }
 @media (max-width:1200px){
     header{ 
@@ -428,6 +452,24 @@ header{
             padding: 20%;               
         }
     }
+    .smilesub{
+        .smilesubwrap{      
+            .smilesubmenu{                 
+                &:nth-child(3) img{
+                    left: 2rem;
+                    bottom: -5rem;
+                }
+                &:nth-child(5) img{
+                    left: 3rem;
+                    bottom: -5.5rem;
+                }
+                &:nth-child(6) img{
+                    left: 3rem;
+                    bottom: -6rem;
+                }                  
+            }            
+        }
+    }
 }
 @media (max-width:990px){
     header{ 
@@ -477,7 +519,23 @@ header{
                 }
             }            
         }    
-    }      
+    }  
+    .smilesub{
+        .smilesubwrap{      
+            .smilesubmenu{
+                a{ 
+                    img{
+                        top: 0 !important;
+                        bottom: 0 !important;
+                        left: 0 !important;
+                        right: 0 !important;
+                        margin: auto !important;
+                    }                     
+                    
+                }                                                           
+            }            
+        }
+    }    
 }
 @media (max-width:767px){
     header{ 
@@ -680,8 +738,11 @@ header{
                         }
                     } 
                 }   
+                .naviscroll{margin: .5rem;}
                 .swiper-scrollbar{
                     width: 100%;
+                    left: 0;
+                    right: 0;
                 }                
                 .sandwrapnavi{
                     display: none;
@@ -710,6 +771,16 @@ header{
             
         }    
     }
+    .smilesub{
+        .smilesubwrap{      
+            .smilesubmenu{
+                a{
+                    margin: 0.3rem;
+                    max-height: 40vw;
+                }                                                
+            }            
+        }
+    }  
 }
 @media (max-width:575px){
     header{ 
@@ -792,7 +863,7 @@ header{
             }
             
         }    
-    }
+    }    
 }
 
 // @media (max-width:1440px)

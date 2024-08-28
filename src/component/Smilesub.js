@@ -13,7 +13,7 @@ function Smilesub() {
                 {
                     data.smileSub.map((v, i)=>(
                         <div key={`smilesubmenu${i}`} className="col-6 col-md-4 smilesubmenu">
-                            <Link to={v.href} className='d-flex flex-column align-items-center'>
+                            <Link to={v.href} className='d-flex flex-column align-items-center justify-content-center'>
                                 <img src={v.src} alt={v.smileSubhnm} />
                                 <div className="subtextwrap d-flex flex-column align-items-center">
                                     <Foodnm color='#ffffff' className='foodnm'>{v.smileSubhnm}</Foodnm>
