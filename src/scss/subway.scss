@@ -414,6 +414,65 @@ header{
         
     }
 }
+.notice{
+    background: $green;
+    .noticewrap{
+        position: relative;
+        padding: 6rem;
+        .noticetitle{
+            color: #fff;
+            font-size: 2rem;
+            font-family: 'Pretendard-Bold';
+            margin-bottom: 2rem;
+            text-align: center;
+            span:last-child{
+                color: $yellow;
+            }
+        }
+        ul{            
+            li{
+                list-style:initial;
+                color: #fff;   
+                padding-top: 1.25rem;  
+                border-bottom: 1px solid transparent;       
+                a{
+                    color: #fff;
+                    font-size: 1.125rem;
+                    .title{
+                        font-weight: 400;
+                        white-space: nowrap;  
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+                    }
+                    .day{
+                        font-size: 1rem;
+                        font-weight: 300;
+                        white-space: nowrap;  
+                        overflow: hidden; 
+                        text-overflow: ellipsis;
+                    }
+                }
+                &:hover{
+                    border-color:$yellow;
+                    a{
+                        color: $yellow;
+                    }
+                }
+            }                   
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 80%;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0;
+            background: #fff;
+        }    
+    }    
+}
 @media (min-width:768px) {
     header{
         &.headeron{
@@ -499,7 +558,12 @@ header{
             top: 25%;        
             transform: scaleX(1.5);
         }
-    }   
+    }  
+    .notice{
+        .noticewrap{
+            padding:  5rem;    
+        }
+    } 
 }
 @media (max-width:1200px){
     header{ 
@@ -586,13 +650,29 @@ header{
                 img{
                     height: 30vw;
                 }
-                &.on{
-                }
             }        
         }
         .subtextwrap{
             font-size: 2rem;
         }
+    }
+    .notice{
+        .noticewrap{
+            padding:  5rem 0 5rem 5rem;            
+            ul{            
+                li{     
+                    a{
+                        font-size: 1rem;
+                        .day{
+                            font-size: 0.875rem;
+                        }
+                    }
+                }                   
+            }
+            &::before{
+                content: none;
+            }    
+        }    
     }
 }
 @media (max-width:990px){
@@ -660,6 +740,30 @@ header{
             }            
         }
     } 
+    .notice{
+        .noticewrap{
+            margin: auto;
+            padding: 5rem 0;
+            ul{            
+                li{     
+                    a{
+                        font-size: 1rem;
+                        .title{
+                            width: 75%;
+                        }
+                        .day{
+                            width: 25%;
+                            font-size: 0.875rem;
+                            text-align: end;
+                        }
+                    }
+                }                   
+            }
+            &::before{
+                content: none;
+            }    
+        }    
+    }
 }
 @media (max-width:767px){
     header{ 
@@ -934,6 +1038,11 @@ header{
             transform: scaleX(1.8);
         }
     }
+    .notice{
+        .noticewrap{
+            margin: 0 2rem;  
+        }    
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -1032,6 +1141,25 @@ header{
             font-size: 1.5rem;
         }        
     }  
+    .notice{
+        .noticewrap{
+            .noticetitle{
+                font-size: 1.5rem;
+            }
+            ul{            
+                li{     
+                    a{
+                        .title{
+                            font-size: 0.875rem;
+                        }
+                        .day{
+                            font-size: 0.75rem;
+                        }
+                    }
+                }                   
+            } 
+        }    
+    }    
 }
 
 @keyframes withsub_1{

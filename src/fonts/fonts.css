@@ -61,6 +61,12 @@
     src: url('./ArchivoBlack-Regular.ttf') format('truetype');    
   }
 
+ /* Pretendard */
+  @font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('./Pretendard-Bold.ttf') format('truetype');    
+  }
+
   body {
     font-family:"Noto Sans KR", sans-serif !important;
     font-weight: 400;
