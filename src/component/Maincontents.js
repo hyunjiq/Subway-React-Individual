@@ -2,6 +2,7 @@ import Mainbanner from "./Mainbanner"
 import Sandwich from "./Sandwich"
 import Salad from "./Salad"
 import Smilesub from "./Smilesub"
+import Withsub from "./Withsub"
 
 
 function Maincontents() {
@@ -11,6 +12,7 @@ function Maincontents() {
             <Sandwich></Sandwich>
             <Salad></Salad>
             <Smilesub></Smilesub>
+            <Withsub></Withsub>
         </>
     )
 }

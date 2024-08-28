@@ -369,10 +369,22 @@
         }        
     ],
     "withSub":[
-        "/img/smileSub/cry.jpg",
-        "/img/smileSub/pyramid.jpg",
-        "/img/smileSub/apartment.jpg",
-        "/img/smileSub/graduation.jpg"
+        {
+            "src" :"/img/withsub/cry.jpg",
+            "alt":"드라마 눈물의 여왕 광고 사진"
+        },
+        {
+            "src" :"/img/withsub/pyramid.jpg",
+            "alt":"드라마 피라미드 게임 광고 사진"
+        },
+        {
+            "src" :"/img/withsub/apartment.jpg",
+            "alt":"예능 아파트 광고 사진"
+        },
+        {
+            "src" :"/img/withsub/graduation.jpg",
+            "alt":"드라마 졸업 광고 사진"
+        }  
     ],
     "subnews":[
         {
