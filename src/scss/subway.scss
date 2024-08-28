@@ -328,9 +328,90 @@ header{
     }
 }
 .withsub{
-    margin-top: 15rem;
+    margin-top: 15vw;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15vw;    
     .contentwrap{
+        position: relative;
         margin-top: 4vw;
+        .content{
+            width: 30%;
+            overflow: hidden;
+            border-radius: 0 1rem 0 1rem;
+            margin: .5rem;
+            transition: .3s;
+            
+        }   
+        &::after{
+            content: "";
+            position: absolute;
+            background: url(../svg/withsub_1.svg) no-repeat;
+            width: 4.5rem;
+            height: 4.5rem;
+            top: 85%;
+            right: -3%;
+            z-index: -1;
+            animation: withsub_1 5s linear infinite;
+        }   
+        &::before{
+            content: "";
+            position: absolute;
+            background: url(../svg/withsub_2.svg) no-repeat;
+            width: 8rem;
+            height: 8rem;
+            top: 100%;
+            left: -5%;
+            z-index: -1;
+            animation: withsub_2 5s linear infinite;
+        }  
+    }
+    .subtextwrap{
+        font-size: 3rem;
+        font-weight: 600;
+        color: #333;   
+        margin-top: 3.5rem;     
+        >span{
+            >span{
+                position: relative;
+                padding: 0 2rem;
+                color: #fff;
+                text-align: center;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background: $green;
+                    height: 100%;
+                    width: 100%;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50px;
+                }
+            }
+        }
+        & >span:last-child{
+            >span{
+                &::before{
+                    background: $yellow;
+                }                
+            }           
+        }        
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 30%;        
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;        
+        height: 100%;
+        background-color: #F5F5F5;
+        transform: scaleX(1.2);
+        border-radius: 50% 50% 0 0;
+        z-index: -1;
+        
     }
 }
 @media (min-width:768px) {
@@ -373,6 +454,15 @@ header{
             }                
         }               
     }
+    .withsub{
+        .contentwrap{
+            .content{
+                &.on{
+                    width: 100%;
+                }
+            }        
+        }
+    }
 }
 @media (max-width:1440px){  
     .sandwich{
@@ -395,7 +485,21 @@ header{
                 }                    
             }
         }
-    }
+    } 
+    .withsub{
+        .contentwrap{
+            &::after{
+                right: 0;
+            }   
+            &::before{
+                left: 0;
+            }  
+        }
+        &::before{
+            top: 25%;        
+            transform: scaleX(1.5);
+        }
+    }   
 }
 @media (max-width:1200px){
     header{ 
@@ -476,6 +580,20 @@ header{
             }            
         }
     }
+    .withsub{
+        .contentwrap{
+            .content{
+                img{
+                    height: 30vw;
+                }
+                &.on{
+                }
+            }        
+        }
+        .subtextwrap{
+            font-size: 2rem;
+        }
+    }
 }
 @media (max-width:990px){
     header{ 
@@ -541,7 +659,7 @@ header{
                 }                                                           
             }            
         }
-    }    
+    } 
 }
 @media (max-width:767px){
     header{ 
@@ -787,6 +905,35 @@ header{
             }            
         }
     }  
+    .withsub{
+        margin-top: 20vw;
+        .contentwrap{
+            flex-wrap: wrap;
+            .content{
+                width: 50%;
+                flex: 0 0 auto;
+                margin: 0;
+                .content-margin{
+                    overflow: hidden;  
+                    border-radius: 0 .5rem 0 .5rem;
+                    margin:.3rem;
+                }
+            }        
+        }
+        .subtextwrap{
+            font-size: 1.7rem;
+            >span{
+                >span{
+                    position: relative;
+                    padding: 0 1rem;
+                }
+            }
+        }
+        &::before{
+            top: 25%;        
+            transform: scaleX(1.8);
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -870,6 +1017,44 @@ header{
             
         }    
     }    
+    .withsub{
+        .contentwrap{
+            &::after{
+                width: 3rem;
+                height: 3rem;
+            }   
+            &::before{
+                width: 5rem;
+                height: 5rem;                
+            }  
+        }
+        .subtextwrap{
+            font-size: 1.5rem;
+        }        
+    }  
+}
+
+@keyframes withsub_1{
+    0% {
+        top: 85%;
+    }
+    50%{
+        top: 100%;
+    }
+    100% {
+        top: 85%;
+    }
+}
+@keyframes withsub_2{
+    0% {
+        top: 99%;
+    }
+    50%{
+        top: 110%;
+    }
+    100% {
+        top: 99%;
+    }
 }
 
 // @media (max-width:1440px)
