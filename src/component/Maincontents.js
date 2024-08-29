@@ -6,7 +6,7 @@ import Withsub from "./Withsub"
 import Notice from "./Notice"
 import Mobileapp from "./Mobileapp"
 import Supportmenu from "./Supportmenu"
-
+import Founding from "./Founding"
 
 function Maincontents() {
     return (
@@ -19,6 +19,7 @@ function Maincontents() {
             <Notice></Notice>
             <Mobileapp></Mobileapp>
             <Supportmenu></Supportmenu>
+            <Founding></Founding>
         </>
     )
 }

@@ -543,6 +543,21 @@ header{
         }
     }
 }
+.founding{
+    .foundingbtn{
+        background-color: $green;
+        padding: 1rem 0;
+        width: 100%;
+        .btnimg {
+            display: block;
+            
+        }
+        .btntext{
+           font-size: 1.5rem;
+           color: #fff;
+        }
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{
@@ -1401,11 +1416,3 @@ header{
         top: 99%;
     }
 }
-
-// @media (max-width:1440px)
-// @media (max-width:1200px)
-// @media (max-width:1024px)
-// @media (max-width:990px)
-// @media (max-width:767px)
-// @media (max-width:575px)
-// @media (max-width:320px)

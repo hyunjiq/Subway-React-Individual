@@ -21,3 +21,8 @@ button{border: none; background-color: transparent;}
  {
     max-width: 1400px;
 }
+button{
+    &:focus-visible{
+        outline:none;
+    }
+}
