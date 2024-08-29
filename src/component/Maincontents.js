@@ -5,6 +5,7 @@ import Smilesub from "./Smilesub"
 import Withsub from "./Withsub"
 import Notice from "./Notice"
 import Mobileapp from "./Mobileapp"
+import Supportmenu from "./Supportmenu"
 
 
 function Maincontents() {
@@ -17,6 +18,7 @@ function Maincontents() {
             <Withsub></Withsub>
             <Notice></Notice>
             <Mobileapp></Mobileapp>
+            <Supportmenu></Supportmenu>
         </>
     )
 }

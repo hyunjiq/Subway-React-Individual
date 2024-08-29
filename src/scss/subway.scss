@@ -514,6 +514,33 @@ header{
             margin: auto;
             transition: .3s;
         }
+    }    
+}
+.supportmenu{
+    margin-top: 10vw;
+    background: #FAFAFA;
+    .menuul{
+        padding: 3rem ;
+        .menuli{
+            a{
+                i{
+                    font-size: 7rem;
+                    color: #fff;
+                    background-color: #E2DFC6;
+                    padding: 2rem;
+                    border-radius: 100px;
+                    transition: .3s;
+                }
+                &:hover{
+                    i{
+                        background-color: #2FB56C;
+                    }
+                }
+            }            
+            span:nth-child(2){
+                margin-top: 1rem;
+            }
+        }
     }
 }
 @media (min-width:768px) {
@@ -733,6 +760,18 @@ header{
         .appimg{
             &::before{
                 height: 150%;
+            }
+        }
+    }
+    .supportmenu{
+        .menuul{
+            .menuli{
+                a{
+                    i{
+                        font-size: 5rem;
+                        padding: 1.5rem;
+                    }
+                } 
             }
         }
     }
@@ -1163,6 +1202,33 @@ header{
             }
         }
     }
+    .supportmenu{
+        .menuul{
+            padding: 0;
+            .menuli{
+                padding: 2rem;
+                a{
+                    i{
+                        font-size: 4rem;
+                        padding: 1.3rem;
+                    }                    
+                } 
+                :nth-child(2){
+                    font-size: 1rem;
+                }
+                :nth-child(3){
+                    font-size:0.875rem;
+                    text-align: center;
+                    span{
+                        display: block;
+                        line-height: 0 !important;
+                        font-size: 0 !important;
+                        color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -1296,6 +1362,21 @@ header{
             }
         }
     } 
+    .supportmenu{
+        .menuul{
+            padding: 0;
+            .menuli{
+                padding: 2rem;
+                a{
+                    i{
+                        font-size: 20vw;
+                        padding: 2rem;
+                        border-radius: 50%;
+                    }                    
+                }                 
+            }
+        }
+    }
 }
 
 @keyframes withsub_1{
