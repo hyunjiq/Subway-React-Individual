@@ -4,6 +4,7 @@ import Salad from "./Salad"
 import Smilesub from "./Smilesub"
 import Withsub from "./Withsub"
 import Notice from "./Notice"
+import Mobileapp from "./Mobileapp"
 
 
 function Maincontents() {
@@ -15,6 +16,7 @@ function Maincontents() {
             <Smilesub></Smilesub>
             <Withsub></Withsub>
             <Notice></Notice>
+            <Mobileapp></Mobileapp>
         </>
     )
 }

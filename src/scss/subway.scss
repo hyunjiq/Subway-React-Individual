@@ -473,6 +473,49 @@ header{
         }    
     }    
 }
+.mobileapp{
+    .apptext{
+        .apptextwrap{
+            padding: 5rem 0;
+            > span{
+                font-size: 1.125rem;
+                color: $yellow;
+            }
+            h2{
+                font-size: 2.8125rem;
+                font-weight: 600;
+                text-align: center;
+                span{
+                    display: block;
+                }
+            }
+            .appdownload{
+                margin-top: 5rem;
+                padding: 1.3rem 6rem;
+                border-radius: 5px;
+                background-color: $yellow;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .appimg{
+        position: relative;
+        &::before{
+            content: "";
+            background: url(../../public/img/app/subwayapp-pc.png) no-repeat;
+            width: 100%;
+            height: 180%;
+            background-size: contain;
+            background-position: center bottom;
+            position: absolute;
+            bottom: -10%;
+            right: 0;
+            left: 0;
+            margin: auto;
+            transition: .3s;
+        }
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{
@@ -674,6 +717,25 @@ header{
             }    
         }    
     }
+    .mobileapp{
+        .apptext{
+            .apptextwrap{
+                > span{
+                }
+                h2{
+                    span{
+                    }
+                }
+                .appdownload{
+                }
+            }
+        }
+        .appimg{
+            &::before{
+                height: 150%;
+            }
+        }
+    }
 }
 @media (max-width:990px){
     header{ 
@@ -763,6 +825,27 @@ header{
                 content: none;
             }    
         }    
+    }
+    .mobileapp{
+        .apptext{
+            .apptextwrap{
+                > span{
+                }
+                h2{
+                    font-size: 2.5rem;
+                    span{
+                    }
+                }
+                .appdownload{
+                    padding: 1.3rem 5rem;
+                }
+            }
+        }
+        .appimg{
+            &::before{
+                height: 120%;
+            }
+        }
     }
 }
 @media (max-width:767px){
@@ -1043,6 +1126,43 @@ header{
             margin: 0 2rem;  
         }    
     }
+    .mobileapp{
+        .mobileappwrap{
+            flex-direction: row-reverse; 
+            justify-content: center;
+            padding: 6rem 0;
+        }
+        .apptext{
+            position: relative;
+            .apptextwrap{
+                padding: 0;
+                > span{
+                    display: none;
+                }
+                h2{
+                    font-size: 2rem;
+                    span{
+                    }
+                }
+                .appdownload{
+                    margin: 0;
+                    width: 90%;
+                    text-align: center;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .appimg{
+            &::before{                
+                content: "";
+                background-image: url(../../public/img/app/subwayapp-m.png);
+                height: 100%;
+                width: 100%;
+                top: 0;
+                margin: 0;
+            }
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -1159,7 +1279,23 @@ header{
                 }                   
             } 
         }    
-    }    
+    }   
+    .mobileapp{
+        .mobileappwrap{
+            padding: 5rem 0;
+        }
+        .apptext{
+            .apptextwrap{
+                h2{
+                    font-size: 1.3rem;
+                }
+                .appdownload{
+                    padding: 1rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    } 
 }
 
 @keyframes withsub_1{

@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
 import data from '../data/db.json'
-import { Contentstitle } from './style';
 import { Link } from 'react-router-dom';
 
 function Notice() {
