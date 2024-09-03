@@ -21,6 +21,7 @@
 <div id="module">
     <h2>사용모듈</h2>
     <ul>
+        <li>@supabase/supabase-js: ^2.45.3</li>
         <li>axios: ^1.7.3</li>
         <li>bootstrap: ^5.3.3</li>
         <li>bootstrap-icons: ^1.11.3</li>

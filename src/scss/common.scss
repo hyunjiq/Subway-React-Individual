@@ -21,7 +21,7 @@ button{border: none; background-color: transparent;}
  {
     max-width: 1400px;
 }
-button{
+button, input, select, textarea{
     &:focus-visible{
         outline:none;
     }
