@@ -591,6 +591,41 @@ header{
         }
     }
 }
+footer{
+    background: #333333;
+    color: #aaa;
+    font-size: 1rem;
+    font-weight: 300;
+    .ftboder{
+        border-bottom: 1px solid #666;
+        ul{
+            display: flex; 
+            justify-content:center;
+            align-items:center;
+            li{
+                padding: 1.5rem ;
+            }
+        }        
+    }
+    .conwrap{
+        padding: 1.5rem 4rem;
+        justify-content: space-between;
+        .iconwrap{
+            a{
+                padding: .5rem;                
+            }
+        }
+    }
+    a{
+        font-size: 1.125rem;
+        color: #aaa;
+        font-weight: 400;
+    }
+    i{
+        font-size: 1.875rem;
+        color:#fff;
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{
@@ -976,7 +1011,8 @@ header{
                             transform: translateX(-44px);
                             button{
                                 color: #fff;
-                                font-size: 2.5rem;                                                           
+                                font-size: 2.5rem;   
+                                padding: 0;                                                        
                             }
                         }                        
                     }
@@ -1277,6 +1313,39 @@ header{
             }
         }
     }
+    footer{
+        font-size: .875rem;
+        .ftboder{
+            padding: 1rem 2rem;
+            border-bottom: 1px solid transparent;
+            ul{
+                display: block;
+                li{
+                    padding: .25rem;
+                }
+            }
+        }
+        .conwrap{
+            padding: 1.5rem 2rem;
+            position: relative;
+            .textwrap{
+                span{
+                    span{
+                        display: block;
+                    }
+                }
+            }
+            .iconwrap{
+                position: absolute;
+                right: 0;
+                bottom: 100%;
+                padding: 1rem 2rem;
+            }
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -1422,6 +1491,22 @@ header{
                         border-radius: 50%;
                     }                    
                 }                 
+            }
+        }
+    }
+    footer{
+        .ftboder{
+            padding: 1rem;
+            ul{
+                li{
+                    padding: .25rem;
+                }
+            }
+        }
+        .conwrap{
+            padding: 1rem;
+            .iconwrap{
+                padding: 1rem;
             }
         }
     }
