@@ -56,7 +56,7 @@ function Hd() {
     return (
         <header className={headerchange? "headeron" : ""}>
             <div className='headerdiv container-xl d-flex align-items-center'>
-                <h1 className=''><a href="#"><img src={headerchange? logohover : logo} alt="서브웨이로고" /></a></h1>
+                <h1 className=''><a href="/"><img src={headerchange? logohover : logo} alt="서브웨이로고" /></a></h1>
                 <button className='m-menu-btn'>
                     <Styleicon content="\F479"></Styleicon>
                     <span className='visually-hidden'>메뉴버튼</span>
@@ -108,17 +108,17 @@ function Hd() {
                         }
                     </ul>
                     <ul className='m-li m-bottom-menu'>
-                        <li className='m-li-btn m-li-search col-6 py-3'>
-                            <button className='d-flex flex-column align-items-center'>
+                        <li className='m-li-btn m-li-search col-6 py-3'>                            
+                            <Link className='d-flex flex-column align-items-center' to="/Findrestaurant">
                                 <img src={shop} alt="매장찾기" />
                                 <span>매장찾기</span>
-                            </button>
+                            </Link>                            
                         </li>
                         <li className='m-li-btn m-li-login col-6 py-3'>
-                            <button className='d-flex flex-column align-items-center'>
+                            <Link className='d-flex flex-column align-items-center'>
                                 <Styleicon content="\F4DA"></Styleicon>
                                 <span>로그인</span>
-                            </button>                            
+                            </Link>                       
                         </li>
                     </ul>  
                 </div>

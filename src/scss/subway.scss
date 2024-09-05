@@ -592,7 +592,7 @@ header{
     }
 }
 aside{
-    z-index: 10000;
+    z-index: 1000;
     bottom: 10%;
     right: 3vh;
     display: flex;
@@ -1106,7 +1106,7 @@ footer{
                     .m-li-btn{                        
                         &.m-li-search{
                             background-color: $yellow;
-                            button{
+                            a{
                                 img{
                                     height: 2.5rem;
                                 }
@@ -1114,12 +1114,12 @@ footer{
                         }
                         &.m-li-login{
                             background-color: $green;
-                            button{
+                            a{
                                 font-size: 2.5rem;
                                 color: #fff;
                             }
                         }
-                        button{
+                        a{
                             span{
                                 font-size: 0.875rem;
                                 font-weight: 300;

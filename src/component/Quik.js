@@ -5,7 +5,7 @@ import { Styleicon } from "./style"
 function Quik() {
     return (
         <aside className="position-fixed">
-            <Link className="findbtn">
+            <Link to="/Findrestaurant" className="findbtn">
                 <span className="">매장찾기</span>
             </Link>
             <a href="#" className="topbtn">
