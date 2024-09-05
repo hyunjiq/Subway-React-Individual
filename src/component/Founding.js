@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Styleicon, Foodtext } from './style';
 import { Link } from 'react-router-dom';
-import LocationSelect from './LocationSelect'; // 새로 만든 컴포넌트 임포트
+import LocationSelect from './LocationSelect'; 
+import { supabase } from '../data/supabaseClient'; 
+
 
 function Founding() {
     const [storePresence, setStorePresence] = useState('');
@@ -11,9 +13,37 @@ function Founding() {
     const [contact, setContact] = useState('');
     const [inquiryText, setInquiryText] = useState('');
 
+    // 폼 제출 핸들러
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // 페이지 리로드 방지
+
+        // 폼 데이터를 객체로 만듭니다.
+        const formData = {
+            storePresence,
+            city,
+            district,
+            name,
+            contact,
+            inquiryText,
+        };
+
+        // Supabase에 데이터 삽입
+        const { data, error } = await supabase
+            .from('inquiries')  // 'inquiries' 테이블 이름
+            .insert([formData]);
+
+        if (error) {
+            console.error('Error inserting data:', error.message);
+            alert('데이터 저장 중 오류가 발생했습니다.');
+        } else {
+            console.log('Data inserted successfully:', data);
+            alert('문의가 성공적으로 접수되었습니다.');
+        }
+    };
+
     return (
         <div className="founding">
-            <div className="foundingcon container-lg d-flex">
+            <div className="foundingcon container-lg d-flex align-items-center">
                 <div className='phonediv col-6 d-flex flex-column align-items-end'>
                     <div className="textwrap col-6">
                         <h3>02-797-5036</h3>
@@ -25,7 +55,7 @@ function Founding() {
                     </div>                    
                 </div>
                 <div className='formdiv col-6'>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <ul>
                             <li>
                                 <input
@@ -51,6 +81,7 @@ function Founding() {
                                 <input
                                     type="text"
                                     value={name}
+                                    placeholder="성함"
                                     onChange={(e) => setName(e.target.value)}
                                 />
                             </li>
@@ -58,20 +89,26 @@ function Founding() {
                                 <input
                                     type="text"
                                     value={contact}
+                                    placeholder="연락처"
                                     onChange={(e) => setContact(e.target.value)}
                                 />
                             </li>
                             <li>
                                 <textarea
                                     value={inquiryText}
+                                    placeholder="문의내용"
                                     onChange={(e) => setInquiryText(e.target.value)}
                                 ></textarea>
                             </li>
                             <li>
-                                <input type="checkbox" name="" id="" />
+                                <span>
+                                    <input type="checkbox" name="" id="" />
+                                    개인정보처리방침 동의
+                                </span>
+                                <Link>[전문보기]</Link>
                             </li>
                             <li>
-                                <button type="submit"></button>
+                                <button type="submit">문의 접수하기</button>
                             </li>
                         </ul>
                     </form>
