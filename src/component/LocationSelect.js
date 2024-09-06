@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Styleicon } from './style';
 
 function LocationSelect({ onCityChange, onDistrictChange }) {
     const [cities, setCities] = useState([]);
@@ -66,24 +67,30 @@ function LocationSelect({ onCityChange, onDistrictChange }) {
     };
 
     return (
-        <div>
-            <select value={selectedCity} onChange={handleCityChange}>
-                <option value="">창업 희망 시/도 선택</option>
-                {cities.map((city) => (
-                    <option key={city} value={city}>
-                        {city}
-                    </option>
-                ))}
-            </select>
-            <select onChange={(e) => onDistrictChange(e.target.value)}>
-                <option value="">창업 희망 구/군 선택</option>
-                {districts.map((district) => (
-                    <option key={district} value={district}>
-                        {district}
-                    </option>
-                ))}
-            </select>
-        </div>
+        <>
+            <li className='locationSelect col-12 col-md-6'>
+                <select value={selectedCity} onChange={handleCityChange}>
+                    <option value="">창업 희망 시/도 선택</option>
+                    {cities.map((city) => (
+                        <option key={city} value={city}>
+                            {city}
+                        </option>
+                    ))}
+                </select>
+                <Styleicon content='\F229'></Styleicon>
+            </li>
+            <li className='locationSelect col-12 col-md-6'>
+                <select onChange={(e) => onDistrictChange(e.target.value)}>
+                    <option value="">창업 희망 구/군 선택</option>
+                    {districts.map((district) => (
+                        <option key={district} value={district}>
+                            {district}
+                        </option>
+                    ))}
+                </select> 
+                <Styleicon content='\F229'></Styleicon>          
+            </li>  
+        </>
     );
 }
 
