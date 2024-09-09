@@ -8,6 +8,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 function Sandwich() {
+    const handleClick = (event) => {
+        event.preventDefault();
+      };
     return (
         <div className='sandwich'>            
             <Contentstitle className='d-flex flex-column contentstitle'>
@@ -32,7 +35,7 @@ function Sandwich() {
                     {
                         data.sandwich.map((v, i)=>(
                             <SwiperSlide key={`sandwichslide${i}`} >
-                                <Link to={v.href} className="activewrap d-flex flex-column justify-content-center align-items-center">
+                                <Link to={v.href} className="activewrap d-flex flex-column justify-content-center align-items-center" onClick={handleClick}>
                                     <img src={v.src} alt={v.alt} />
                                     <div className="sandtextwrap flex-column align-items-center">
                                         <Foodnm>{v.sandwichnm}</Foodnm>

@@ -704,6 +704,44 @@ footer{
         color:#fff;
     }
 }
+.findrestaurant{
+    background: #FFD339;
+    .findbanner{
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 5px solid $green;
+        &::before{
+            content: "";
+            background:url(../svg/find.svg) no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            // transform-origin:right;
+            background-size: contain;
+            background-position: center;
+        }
+        &::after{
+            // width: 100%;
+            // height: 50px;
+            // position: absolute;
+            // bottom: 0;
+            // left: 0;
+            // background-color: ;
+        }
+        h3{
+            font-size: 3rem;
+            color: #1B4837;
+            margin-left: 10rem;
+        }
+    }
+    .findmap{
+        width: 100%;
+        height: calc(100vh - 300px);
+    }
+}
 @media (min-width:768px) {
     header{
         &.headeron{

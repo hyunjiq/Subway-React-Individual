@@ -1,4 +1,4 @@
-import React, { useState, useEffect, forwardRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../svg/Subway_logo.svg'
 import logohover from '../svg/Subway_logo_hover.svg'
@@ -7,6 +7,7 @@ import data from '../data/db.json'
 import { Styleicon } from './style';
 
 function Hd() {
+
     const [ headerchange, setHeaderchange ] = useState(false);
 
     const hoverheader = () => {
@@ -95,7 +96,7 @@ function Hd() {
                                                     {
                                                         submenu[v.cateno].map((vv, ii) => (
                                                             <li key={`submenu${ii}`} className='gnbulli'>
-                                                                <Link className='' to={vv.href}>{vv.gnbnm}</Link>
+                                                                <Link className='' to={vv.gnbnm === '매장 찾기' ? vv.href : "/"}>{vv.gnbnm}</Link>
                                                             </li>
                                                         ))
                                                     }

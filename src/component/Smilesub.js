@@ -3,6 +3,9 @@ import data from '../data/db.json'
 import { Contentstitle, Foodnm, Foodtext, Styleicon } from './style';
 
 function Smilesub() {
+    const handleClick = (event) => {
+        event.preventDefault();
+      };
     return (
         <div className="smilesub">
             <Contentstitle className='d-flex justify-content-center'>
@@ -13,7 +16,7 @@ function Smilesub() {
                 {
                     data.smileSub.map((v, i)=>(
                         <div key={`smilesubmenu${i}`} className="col-6 col-md-4 smilesubmenu">
-                            <Link to={v.href} className='d-flex flex-column align-items-center justify-content-center'>
+                            <Link to={v.href} className='d-flex flex-column align-items-center justify-content-center'  onClick={handleClick}>
                                 <img src={v.src} alt={v.smileSubhnm} />
                                 <div className="subtextwrap d-flex flex-column align-items-center">
                                     <Foodnm color='#ffffff' className='foodnm'>{v.smileSubhnm}</Foodnm>

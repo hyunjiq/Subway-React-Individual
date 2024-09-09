@@ -2,6 +2,9 @@ import data from '../data/db.json'
 import { Link } from 'react-router-dom';
 
 function Notice() {
+    const handleClick = (event) => {
+        event.preventDefault();
+      };
     return (
         <div className="notice">
             <div className="container-lg px-0">
@@ -14,7 +17,7 @@ function Notice() {
                         {
                             data.subnews.map((v, i)=>(
                                 <li key={`noticelist${i}`}>
-                                    <Link to={v.href}  className='d-flex justify-content-between'>
+                                    <Link to={v.href}  className='d-flex justify-content-between'  onClick={handleClick}>
                                         <span className='title'>{v.title}</span>
                                         <span className='day'>{v.day}</span>
                                     </Link>

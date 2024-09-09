@@ -5,6 +5,9 @@ import data from '../data/db.json'
 import { Contentstitle, Foodnm, Foodtext } from './style';
 
 function Salad() {
+    const handleClick = (event) => {
+        event.preventDefault();
+      };
     return (
         <div className='salad'>  
             <div className="saladtxtwrap d-flex flex-column align-items-center justify-content-center">
@@ -46,7 +49,7 @@ function Salad() {
                     {
                     data.salad.map((v, i)=>(
                         <SwiperSlide key={`salad${i}`}>
-                            <Link to={v.href} className='d-flex flex-column justify-content-center align-items-center'>
+                            <Link to={v.href} className='d-flex flex-column justify-content-center align-items-center' onClick={handleClick}>
                                 <img src={v.src} alt={v.alt}/>
                                 <span className="saladtextwrap d-flex flex-column align-items-center">
                                     <Foodnm>{v.saladhnm}</Foodnm>

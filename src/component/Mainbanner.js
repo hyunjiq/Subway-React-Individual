@@ -9,7 +9,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 function Mainbanner() {
-
+    const handleClick = (event) => {
+        event.preventDefault();
+      };
     return (
         <Swiper 
         pagination={{ clickable: true }}
@@ -24,7 +26,7 @@ function Mainbanner() {
             {
                 data.mainbanner.map((v, i)=>(
                     <SwiperSlide className={`mainslide mainslide${i+1}`} key={`mainslide${i}`}>
-                        <Link to={v.href}>
+                        <Link to={v.href} onClick={handleClick}>
                             <Mainslidewrap bgcolor={v.bgcolor} linecolor={v.linecolor} className={`mainslidewrap mainslidewrap${i+1}`}>
                                 <Mainslidetxtwrap  url={v.url} className='mainslidetxtwrap d-flex flex-column container-lg'>
                                     <Mainbannertxt color={v.fontcolor} className='mainbannertxt'>{v.text}</Mainbannertxt>
