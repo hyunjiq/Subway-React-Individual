@@ -18,6 +18,16 @@ function Hd() {
         setHeaderchange(false);
     };
 
+    const [ menutoggle, setMenutoggle ] = useState(false);
+
+    const handleMenuToggle = () => {
+        setMenutoggle(!menutoggle); 
+    };
+    
+    const handleCloseMenu = () => {
+        setMenutoggle(false);
+    };
+
     const gnbmenu = data.gnb.filter((item)=> item.prnum === "")
 
     const submenu = {};
@@ -32,11 +42,6 @@ function Hd() {
     }
 
     useEffect(() => {
-        const [mmenubtn, xbtn] = document.querySelectorAll(".m-menu-btn, .x-btn");
-        const mmenu = document.querySelector(".m-menu");
-
-        mmenubtn.addEventListener("click", () => mmenu.classList.add("d-block"));
-        xbtn.addEventListener("click", () => mmenu.classList.remove("d-block"));
 
         const gnbli = document.querySelectorAll(".gnbli")
 
@@ -58,17 +63,17 @@ function Hd() {
         <header className={headerchange? "headeron" : ""}>
             <div className='headerdiv container-xl d-flex align-items-center'>
                 <h1 className=''><a href="/"><img src={headerchange? logohover : logo} alt="서브웨이로고" /></a></h1>
-                <button className='m-menu-btn'>
+                <button className='m-menu-btn' onClick={handleMenuToggle}>
                     <Styleicon content="\F479"></Styleicon>
                     <span className='visually-hidden'>메뉴버튼</span>
                 </button>
-                <div className='m-menu'>
+                <div className={`m-menu ${menutoggle ? 'd-block' : ''}`}>
                     <div className='m-li m-top-menu'>                        
                         <div className='m-menu-header d-flex align-items-center justify-content-between'>
                             <div className='w-0'></div>
                             <img src={logohover} alt="서브웨이로고" />
                             <div className='w-0 x-btn'>
-                                <button>
+                                <button onClick={handleMenuToggle}>
                                     <Styleicon content="\F62A"></Styleicon>
                                     <span className='visually-hidden'>닫기버튼</span>
                                 </button>
@@ -110,7 +115,7 @@ function Hd() {
                     </ul>
                     <ul className='m-li m-bottom-menu'>
                         <li className='m-li-btn m-li-search col-6 py-3'>                            
-                            <Link className='d-flex flex-column align-items-center' to="/Findrestaurant">
+                            <Link className='d-flex flex-column align-items-center' to="/Findrestaurant" onClick={handleCloseMenu}>
                                 <img src={shop} alt="매장찾기" />
                                 <span>매장찾기</span>
                             </Link>                            

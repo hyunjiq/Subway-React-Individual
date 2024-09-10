@@ -706,40 +706,43 @@ footer{
 }
 .findrestaurant{
     background: #FFD339;
-    .findbanner{
+    .findbanner{   
+        width: 100%;     
+        .bannerwrap{            
+            height: 600px;
+            position: relative;
+            padding: 0;
+            &::before{
+                content: "";
+                background:url(../svg/find.svg) no-repeat;
+                position: absolute;
+                bottom: -3rem;
+                right: 0;
+                width: 100%;
+                height: calc(100% - 50px);
+                background-size: contain;
+                background-position: center right;
+            }
+            .textwrap{
+                position: relative;
+                z-index: 10;
+            }
+            h3{
+                font-size: 4rem;
+                color: #FF7A00;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }        
+    }
+    .glass{
         width: 100%;
-        height: 300px;
-        position: relative;
-        overflow: hidden;
-        border-bottom: 5px solid $green;
-        &::before{
-            content: "";
-            background:url(../svg/find.svg) no-repeat;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transform: scale(1.3);
-            // transform-origin:right;
-            background-size: contain;
-            background-position: center;
-        }
-        &::after{
-            // width: 100%;
-            // height: 50px;
-            // position: absolute;
-            // bottom: 0;
-            // left: 0;
-            // background-color: ;
-        }
-        h3{
-            font-size: 3rem;
-            color: #1B4837;
-            margin-left: 10rem;
-        }
+        height: 600px;
     }
     .findmap{
         width: 100%;
-        height: calc(100vh - 300px);
+        height: 100vh;
     }
 }
 @media (min-width:768px) {
@@ -892,6 +895,17 @@ footer{
             }
         }
     }
+    .findrestaurant{
+        .findbanner{   
+            .bannerwrap{            
+                height: 550px;
+                padding: 0 3rem;
+            }        
+        }
+        .glass{
+            height: 550px;
+        }
+    }
 }
 @media (max-width:1200px){
     header{ 
@@ -1038,6 +1052,28 @@ footer{
             }
         }
     }
+    .findrestaurant{
+        .findbanner{   
+            .bannerwrap{            
+                height: 500px;
+                padding: 0 3rem;
+                &::before{
+                    bottom: -2rem;
+                }
+                h3{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }        
+        }
+        .glass{
+            height: 500px;
+        }
+        .findmap{
+        }
+    }
 }
 @media (max-width:990px){
     header{ 
@@ -1157,6 +1193,19 @@ footer{
                     }
                 }
             }
+        }
+    }
+    .findrestaurant{
+        .findbanner{
+            .bannerwrap{
+                height: 50vh;
+                &::before{
+                    background-position: bottom right;
+                }
+            }
+        }
+        .glass{
+            height: 50vh;
         }
     }
 }
@@ -1552,6 +1601,19 @@ footer{
             font-size: 1rem;
         }
     }
+    .findrestaurant{
+        .findbanner{   
+            .bannerwrap{       
+                padding: 0 2rem;
+                h3{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }        
+        }
+    }
 }
 @media (max-width:575px){
     header{ 
@@ -1693,6 +1755,19 @@ footer{
             .iconwrap{
                 padding: 1rem;
             }
+        }
+    }
+    .findrestaurant{
+        .findbanner{   
+            .bannerwrap{       
+                padding: 0 1rem;
+                h3{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }        
         }
     }
 }
