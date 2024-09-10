@@ -743,6 +743,57 @@ footer{
     .findmap{
         width: 100%;
         height: 100vh;
+        .findstore{
+            top: 0;
+            bottom: 0;
+            left: 10%;
+            margin: auto;
+            width: 400px;
+            height: 500px;
+            background-color: $yellow;
+            z-index: 100;
+            padding: 1rem;
+            .mapcon{
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                ul{
+                    padding: 1rem;
+                    li{
+                        padding: 1rem;
+                        border-bottom: 1px solid #999;
+                        button{
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+            .storenm{
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .adrs{
+                font-size: .875rem;
+            }
+            .tel{
+                font-size: .95rem;
+                color: $green;
+                font-weight: 500;
+            }
+            &::before{
+                content: "";
+                background: url(../svg/tomatomushroom.svg) no-repeat;
+                position: absolute;
+                background-size: contain;
+                width: 150px;
+                height: 80px;
+                bottom: calc(100% - 3rem);
+                left: 0;
+                z-index: 101;
+            }
+        }
     }
 }
 @media (min-width:768px) {
@@ -1072,6 +1123,33 @@ footer{
             height: 500px;
         }
         .findmap{
+            .findstore{
+                left: 5%;
+                width: 300px;
+                height: 400px;
+                .mapcon{
+                    ul{
+                        padding: 1rem .5rem;
+                        li{
+                            padding: .5rem;
+                        }
+                    }
+                }
+                .storenm{
+                    font-size: .875rem;
+                }
+                .adrs{
+                    font-size: .75rem;
+                }
+                .tel{
+                    font-size: .875rem;
+                }
+                &::before{
+                    width: 120px;
+                    height: 60px;
+                    bottom: calc(100% - 2rem);
+                }
+            }
         }
     }
 }
@@ -1612,6 +1690,13 @@ footer{
                     font-size: 1rem;
                 }
             }        
+        }
+        .findmap{
+            .findstore{
+                bottom: 0;
+                top: auto;
+                left: 0;
+            }
         }
     }
 }
