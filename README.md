@@ -77,67 +77,23 @@
 </div>
 <div id="component">
     <h2>컴포넌트 셋팅 구조</h2>
-    <ul>
-        <li>
-            <b>Hd: 헤더 및 메뉴</b></br>
-            사이트 상단의 헤더와 메뉴를 담당합니다. 사용자 네비게이션을 편리하게 돕습니다.
-        </li></br>
-        <li>
-            <b>Mainbanner: 메인 슬라이드</b></br>
-           홈페이지의 메인 슬라이드로, 시각적으로 눈에 띄는 배너를 제공합니다.
-        </li></br>
-        <li>
-            <b>Sandwich: 샌드위치</b></br>
-            서브웨이의 다양한 샌드위치 메뉴를 소개하는 섹션입니다.
-        </li></br>
-        <li>
-            <b>Salad: 샐러드</b></br>
-            여러 종류의 샐러드를 보여주는 컴포넌트입니다.
-        </li></br>
-        <li>
-            <b>Smilesub: 서브메뉴</b></br>
-            서브메뉴를 제공하여 추가적인 메뉴 항목을 쉽게 찾을 수 있습니다.
-        </li></br>
-        <li>
-            <b>Withsub: PPL</b></br>
-            서브웨이 제품 추천 및 프로모션 정보를 담고 있는 컴포넌트입니다.
-        </li></br>
-        <li>
-            <b>Notice: 공지사항</b></br>
-            공지사항을 업데이트하고 사용자에게 중요한 정보를 전달합니다.
-        </li></br>
-        <li>
-            <b>Mobileapp: 모바일 앱</b></br>
-            모바일 앱 다운로드와 관련된 정보를 제공합니다.
-        </li></br>
-        <li>
-            <b>Supportmenu: 서포트 메뉴</b></br>
-            고객 지원 링크와 도움말을 모아놓은 메뉴입니다.
-        </li></br>
-        <li>
-            <b>Founding: 창업문의 폼</b></br>
-            창업 문의를 위한 폼을 포함하여, 관심 있는 사용자에게 직접 문의할 수 있게 합니다.
-        </li></br>
-        <li>
-            <b>Ft: 하단 푸터</b></br>
-            하단 푸터로, 저작권 정보와 추가 링크를 포함합니다.
-        </li></br>
-        <li>
-            <b>Quik: 퀵 메뉴</b></br>
-            탑메뉴와 가까운 매장 찾기 기능을 제공하며, 사용자에게 편리한 접근을 돕습니다.
-        </li>
-        <li>🎀FDD로 만들기🎀</li>
-    </ul>
+    <img style="" src="./public/img/fdd.jpg">
     </br>
 </div>
 <div id="design">
     <h2>디자인 시안</h2>
-    <p>🎀모바일시안,pc시안🎀</p>
+    <p>pc시안</p>
+    <img style="" src="./public/img/subway-pc.jpg">
+    <p>모바일시안</p>
+    <img style="" src="./public/img/subway-mobile-prototype.jpg">
     </br>
 </div>
 <div id="db">
-    <h2>db설계</h2>
-    <p>🎀1.json링크(서버리스)/2.수파베이스테이블캡쳐(매장찾기부분)🎀</p>
+    <h2>db설계</h2>    
+    <a href="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/data/db.json">json 보러가기</a></br></br>
+    <p>수파베이스테이블</p>
+    <img style="" src="./public/img/supabasetable.jpg">
+    </br>
     </br>
 </div>
 <div id="issuse">
@@ -152,9 +108,17 @@
             <th><img src="./src/svg/sandwichartist.svg" alt="서브웨이직원svg"></th>
         </tr>
         <tr>
-            <td>매장 찾기 버튼과 창업 문의 폼 디자인에 활용 되었으며 시각적으로 서브웨이 매장을 직관적으로 표현하여 사용자 경험을 개선하였습니다</td>
-            <td>메인 슬라이드 '썹-픽' 배너에서 사용되었으며 서브웨이 직원의 추천을 강조하여 사용자에게 신뢰성과 친근함을 전달하였습니다</td>
-        </tr>        
+            <td>매장 찾기 버튼과 창업 문의 폼 디자인에 활용 되었으며 시각적으로 서브웨이 매장을 직관적으로 표현하여 사용자 경험을 개선하였습니다.</td>
+            <td>메인 슬라이드 '썹-픽' 배너에서 사용되었으며 서브웨이 직원의 추천을 강조하여 사용자에게 신뢰성과 친근함을 전달하였습니다.</td>
+        </tr>  
+        <tr>
+            <th><img src="./src/svg/tomatomushroom.svg" alt="토마토와 버섯"></th>
+            <th><img src="./src/svg/find.svg" alt="서브웨이직원svg"></th>
+        </tr>
+        <tr>
+            <td>토마토와 버섯을 캐릭터와 결합하여 브웨이의 야채를 연상시키도록 디자인되었습니다. Findrestaurant.js의 지도 팝업에 붙여넣어져, 사용자가 식당 정보를 더 친근하고 시각적으로 인식할 수 있도록 하였습니다.</td>
+            <td>지도와 매장 아이콘으로 단순화하고 서브웨이 직원의 이미지를 넣어, 지도에서 서브웨이 위치를 명확하게 인식할 수 있도록 디자인되었습니다. 지도 기반의 검색 기능을 효과적으로 강조하였습니다.</td>
+        </tr>              
     </table>
     </br>
 </div>
