@@ -19,7 +19,7 @@
     </br>
 </div>
 <div id="module">
-    <h2>사용모듈</h2>
+    <h2>🍀 사용모듈</h2>
     <ul>
         <li>@supabase/supabase-js: ^2.45.3</li>
         <li>axios: ^1.7.3</li>
@@ -35,7 +35,7 @@
     </br>
 </div>
 <div id="boilerplate">
-    <h2>보일러플레이트</h2>
+    <h2>🌌 보일러플레이트</h2>
     <ul> 
         <li>
             <b>css</b>
@@ -76,32 +76,40 @@
     </br>
 </div>
 <div id="component">
-    <h2>컴포넌트 셋팅 구조</h2>
+    <h2>👩‍🔧 컴포넌트 셋팅 구조</h2>
     <img style="" src="./public/img/fdd.jpg">
     </br>
 </div>
 <div id="design">
-    <h2>디자인 시안</h2>
-    <p>pc시안</p>
-    <img style="" src="./public/img/subway-pc.jpg">
-    <p>모바일시안</p>
-    <img style="" src="./public/img/subway-mobile-prototype.jpg">
+    <h2>📐 디자인 시안</h2>
+    <h4>- pc시안</h4>
+    <div align="center">
+        <img src="./public/img/subway-pc.jpg">
+    </div>    
+    <h4>- 모바일시안</h4>
+    <div align="center">
+        <img src="./public/img/subway-mobile-prototype.jpg">
+    </div>
     </br>
 </div>
 <div id="db">
-    <h2>db설계</h2>    
-    <a href="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/data/db.json">json 보러가기</a></br></br>
-    <p>수파베이스테이블</p>
-    <img style="" src="./public/img/supabasetable.jpg">
+    <h2>🔎 db설계</h2>
+    <h4>- db.json</h4>
+    <div align="center">
+    </div>
+    <h4>- 수파베이스테이블</h4>
+    <div align="center">
+        <img style="" src="./public/img/supabasetable.jpg">
+    </div>
     </br>
     </br>
 </div>
 <div id="issuse">
-    <h2>작업중 이슈</h2>
+    <h2>⛔ 작업중 이슈</h2>
     </br>
 </div>
 <div id="Illustrator">
-    <h2>자체 제작 일러스트</h2>
+    <h2>🎨 자체 제작 일러스트</h2>
     <table>
         <tr>
             <th><img src="./src/svg/shop.svg" alt="서브웨이매장svg"></th>
@@ -123,9 +131,10 @@
     </br>
 </div>
 <div id="link">
-    <h2>작업 관련 링크</h2>
-    <ul>
-        <a href="https://www.figma.com/design/XY866tUpmpETFe5KsnckFi/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4?m=auto&t=xFOBIDSViyqol1ag-6">🐖 피그마 바로가기</a></br>
-        <a href="https://github.com/hyunjiq">😺 깃허브 바로가기</a>
+    <h2>🏠 작업 관련 링크</h2>
+    <ul>        
+        <li><a href="https://www.figma.com/design/XY866tUpmpETFe5KsnckFi/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4?m=auto&t=xFOBIDSViyqol1ag-6">🐖 피그마 바로가기</a></li>
+        <li><a href="https://github.com/hyunjiq">😺 깃허브 바로가기</a></li>
+        <li><a href="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/data/db.json">📚 json 바로가기</a></li></br></br>
     </ul>
 </div>
