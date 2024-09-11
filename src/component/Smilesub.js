@@ -20,7 +20,7 @@ function Smilesub() {
                                 <img src={v.src} alt={v.smileSubhnm} />
                                 <div className="subtextwrap d-flex flex-column align-items-center">
                                     <Foodnm color='#ffffff' className='foodnm'>{v.smileSubhnm}</Foodnm>
-                                    <Foodtext color='#ffffff' className='d-flex flex-column align-items-center'>
+                                    <Foodtext color='#ffffff' className='foodtext flex-column align-items-center'>
                                         {
                                             v.text.split("|").map((vv, ii)=>(
                                                 <span key={`foodtext${ii}`}>

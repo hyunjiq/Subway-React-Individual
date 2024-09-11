@@ -80,7 +80,7 @@ function Hd() {
                             </div>                            
                         </div>
                         <div className='m-menu-notice'>
-                            <Link className='m-menu-a col-10 d-flex justify-content-between align-items-center' to='/notice'>                                
+                            <Link className='m-menu-a col-10 d-flex justify-content-between align-items-center' to='/'>                                
                                 <span>
                                     <Styleicon content="\F189"></Styleicon>
                                     <span>서브웨이 가격조정안내</span>
