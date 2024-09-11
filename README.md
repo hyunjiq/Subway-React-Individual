@@ -77,19 +77,19 @@
 </div>
 <div id="component">
     <h2>👩‍🔧 컴포넌트 셋팅 구조</h2>
-    <img style="" src="./public/img/fdd.jpg">
+    <img src="./public/img/fdd.jpg">
     </br>
 </div>
 <div id="design">
     <h2>📐 디자인 시안</h2>    
-    <table>
+    <table  align="center">
         <tr>
-            <th style="width:50%">- pc시안</th>
-            <th style="width:50%">- 모바일시안</th>
+            <th>- pc시안</th>
+            <th>- 모바일시안</th>
         </tr>
         <tr>
-            <td align="center"><img style="width:95%" src="./public/img/subway-pc.jpg"></td>
-            <td align="center"><img style="width:40%" src="./public/img/subway-mobile-prototype.jpg"></td>
+            <td align="center"><img style="width:400px;" src="./public/img/subway-pc.jpg"></td>
+            <td align="center"><img style="width:200px;" src="./public/img/subway-mobile-prototype.jpg"></td>
         </tr> 
     </table>
     </br>
@@ -110,7 +110,7 @@
     <p>json 데이터를 보시려면 <a href="#link">여기</a>를 눌러주세요</p>
     <h4>- 수파베이스테이블</h4>
     <div align="center">
-        <img style="" src="./public/img/supabasetable.jpg">
+        <img src="./public/img/supabasetable.jpg">
     </div>
     </br>
     </br>
@@ -120,8 +120,8 @@
     <h3>모바일 메뉴 자동 닫힘</h3>
     <table>
         <tr>
-            <th style="width:50%">문제</th>
-            <th style="width:50%">해결</th>
+            <th style="width:50%;">문제</th>
+            <th style="width:50%;">해결</th>
         </tr>
         <tr>
             <td>모바일 메뉴에서 '매장찾기' 버튼을 클릭하면 라우터는 정상적으로 변경되었으나, 모바일 메뉴가 자동으로 닫히지 않고 그대로 남아 있는 문제</td>
@@ -131,8 +131,8 @@
     <h3>공공데이터 연결</h3>
     <table>
         <tr>
-            <th style="width:50%">문제</th>
-            <th style="width:50%">해결</th>
+            <th style="width:50%;">문제</th>
+            <th style="width:50%;">해결</th>
         </tr>
         <tr>
             <td>데이터 양과 요청 처리: 공공 데이터 API에서 제공하는 데이터의 양이 매우 방대하여(49,874개) 한 번에 요청하면 오류가 발생</td>
@@ -146,8 +146,8 @@
     <h3>Supabase 연결</h3>
     <table>
         <tr>
-            <th style="width:50%">문제</th>
-            <th style="width:50%">해결</th>
+            <th style="width:50%;">문제</th>
+            <th style="width:50%;">해결</th>
         </tr>
         <tr>
             <td>폼 제출 시 데이터 검증: 폼 제출 시 모든 필드를 확인하고, 필수 항목이 비어있을 경우 데이터가 제출되지 않아야 함</td>
@@ -156,28 +156,27 @@
     </table>
     </br>
 </div>
-<div id="Illustrator">
+<div id="Illustrator"></div>
     <h2>🎨 자체 제작 일러스트</h2>
     <table>
         <tr>
-            <th style="width:50%"><img src="./src/svg/shop.svg" alt="서브웨이매장svg"></th>
-            <th style="width:50%"><img src="./src/svg/sandwichartist.svg" alt="서브웨이직원svg"></th>
+            <th><img width="100" height="100" src="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/svg/shop.svg" alt="서브웨이매장svg"></th>
+            <th><img width="100" height="100" src="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/svg/sandwichartist.svg" alt="서브웨이직원svg"></th>
         </tr>
         <tr>
             <td>매장 찾기 버튼과 창업 문의 폼 디자인에 활용 되었으며 시각적으로 서브웨이 매장을 직관적으로 표현하여 사용자 경험을 개선하였습니다.</td>
             <td>메인 슬라이드 '썹-픽' 배너에서 사용되었으며 서브웨이 직원의 추천을 강조하여 사용자에게 신뢰성과 친근함을 전달하였습니다.</td>
-        </tr>  
+        </tr>
         <tr>
-            <th style="width:50%"><img src="./src/svg/tomatomushroom.svg" alt="토마토와 버섯"></th>
-            <th style="width:50%"><img src="./src/svg/find.svg" alt="서브웨이직원svg"></th>
+            <th><img width="100" height="100" src="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/svg/tomatomushroom.svg" alt="토마토와 버섯svg"></th>
+            <th><img width="100" height="100" src="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/svg/find.svg" alt="서브웨이직원svg"></th>
         </tr>
         <tr>
             <td>토마토와 버섯을 캐릭터와 결합하여 브웨이의 야채를 연상시키도록 디자인되었습니다. Findrestaurant.js의 지도 팝업에 붙여넣어져, 사용자가 식당 정보를 더 친근하고 시각적으로 인식할 수 있도록 하였습니다.</td>
             <td>지도와 매장 아이콘으로 단순화하고 서브웨이 직원의 이미지를 넣어, 지도에서 서브웨이 위치를 명확하게 인식할 수 있도록 디자인되었습니다. 지도 기반의 검색 기능을 효과적으로 강조하였습니다.</td>
-        </tr>              
+        </tr> 
     </table>
     </br>
-</div>
 <div id="link">
     <h2>🏠 작업 관련 링크</h2>       
         <a href="https://www.figma.com/design/XY866tUpmpETFe5KsnckFi/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4?m=auto&t=xFOBIDSViyqol1ag-6">🐖 피그마 바로가기</a></br>
