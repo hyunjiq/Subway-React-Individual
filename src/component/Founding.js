@@ -56,7 +56,7 @@ function Founding() {
 
     return (
         <div className="founding">
-            <div className={`foundingcon container-lg px-0 d-flex align-items-center ${isVisible ? '' : 'd-none'}`}>
+            <div className={`foundingcon container-lg px-0 d-flex align-items-center ${isVisible ? 'd-none' : ''}`}>
                 <div className='col-lg-6 d-flex flex-column align-items-end'>
                     <div className="textwrap col-lg-6">
                         <h3>02-797-5036</h3>
