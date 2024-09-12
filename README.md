@@ -3,7 +3,10 @@
     <img style="width:200px;" src="./src/svg/Subway_logo.svg">
     </br>
     </br>
-    <p>실제 브랜드인 서브웨이 웹 페이지를 작업하여, 포트폴리오에 상업용 웹사이트의 기능을 재현하였습니다. 다양한 메뉴와 복잡한 기능을 효율적으로 관리하기 위해 리액트를 사용하여 컴포넌트 기반으로 개발하였습니다.</p>
+    <p>실제 브랜드인 서브웨이 웹앱 페이지를 작업하여, 포트폴리오에 상업용 웹사이트의 기능을 재현하였습니다. React 플랫폼을 선택한 이유는, 프랜차이즈 사업에서 창업주 모집과 특별 프로모션 같은 한정 메뉴를 통해 소비자에게 새로운 경험을 제공하는 광고에 대비해 빠른 랜딩이 필수적이기 때문입니다.</p></br>
+    <p>프랜차이즈 사업의 목표는 새로운 창업자의 접근성을 높이기 
+위한 것이기 때문에 공공 데이터의 오픈 데이터(https://www.data.go.kr/)를 활용하여 창업문의 기능을 구현하였습니다.
+또한 사용자들에게 신뢰성 있는 매장 정보를 제공하기 위해 카카오 지도 API를 활용하였습니다.</p>
     </br>
 </div>
 <div>
@@ -77,7 +80,7 @@
 </div>
 <div id="component">
     <h2>👩‍🔧 컴포넌트 셋팅 구조</h2>
-    <img style="" src="./public/img/fdd.jpg">
+    <a href="https://www.figma.com/board/WCqTi6Cf80Qb3Gp3AD2z1v/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4-FDD?node-id=0-1&t=3NxqlteXNbXHlfFg-1"><img style="" src="./public/img/fdd.jpg"></a>
     </br>
 </div>
 <div id="design">
@@ -181,7 +184,7 @@
 <div id="link">
     <h2>🏠 작업 관련 링크</h2>       
         <a href="https://www.figma.com/design/XY866tUpmpETFe5KsnckFi/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4?m=auto&t=xFOBIDSViyqol1ag-6">🐖 피그마 바로가기</a></br>
-        <a href="https://www.figma.com/board/WCqTi6Cf80Qb3Gp3AD2z1v/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4-FDD?node-id=0-1&t=3NxqlteXNbXHlfFg-1">🍯 피그잼 바로가기</a></br>
+        <a href="https://www.figma.com/board/WCqTi6Cf80Qb3Gp3AD2z1v/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4-FDD?node-id=0-1&t=3NxqlteXNbXHlfFg-1">🍯 DFD & Component Diagram 바로가기</a></br>
         <a href="https://github.com/hyunjiq">😺 깃허브 바로가기</a></br>
         <a href="https://github.com/hyunjiq/Subway-React-Individual/blob/main/src/data/db.json">📚 json 바로가기</a></br></br>
 </div>

@@ -101,7 +101,7 @@ function Hd() {
                                                     {
                                                         submenu[v.cateno].map((vv, ii) => (
                                                             <li key={`submenu${ii}`} className='gnbulli'>
-                                                                <Link className='' to={vv.gnbnm === '매장 찾기' ? vv.href : "/"}>{vv.gnbnm}</Link>
+                                                                <Link className='' to={vv.gnbnm === '매장 찾기' ? `${vv.href}#top` : "/"}>{vv.gnbnm}</Link>
                                                             </li>
                                                         ))
                                                     }
@@ -115,7 +115,7 @@ function Hd() {
                     </ul>
                     <ul className='m-li m-bottom-menu'>
                         <li className='m-li-btn m-li-search col-6 py-3'>                            
-                            <Link className='d-flex flex-column align-items-center' to="/Findrestaurant" onClick={handleCloseMenu}>
+                            <Link className='d-flex flex-column align-items-center' to="/Findrestaurant#top" onClick={handleCloseMenu}>
                                 <img src={shop} alt="매장찾기" />
                                 <span>매장찾기</span>
                             </Link>                            
