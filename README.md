@@ -80,9 +80,7 @@
 </div>
 <div id="component">
     <h2>👩‍🔧 컴포넌트 셋팅 구조</h2>
-<<<<<<< HEAD
-    <a href="https://www.figma.com/board/WCqTi6Cf80Qb3Gp3AD2z1v/%EC%84%9C%EB%B8%8C%EC%9B%A8%EC%9D%B4-FDD?node-id=0-1&t=3NxqlteXNbXHlfFg-1"><img style="" src="./public/img/fdd.jpg"></a>
-    <img src="./public/img/fdd.jpg">
+    <img style="" src="./public/img/fdd.jpg">
     </br>
 </div>
 <div id="design">
